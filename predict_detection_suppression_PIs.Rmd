@@ -1,0 +1,164 @@
+---
+title: "Identifying gene families that are predictive of detection suppression"
+output: html_notebook
+---
+
+
+```{r}
+##### Set the working directory to the cloned github repo directory. You may need to modify the path to reflect your setup.
+setwd("~/pi-disco-pub/")
+# Load the required libraries and functions
+source("~/Downloads/trait_mapping_functions.R")
+library(tidyverse)
+library(pbapply)
+library(ape)
+library(familiar)
+sessionInfo() #print info on software environment
+```
+
+# Introduction
+
+In this R notebook are the analyses carried out to predict detection suppression in Chelicerates using gene family evolutionary histories as inferred from NovelTree. These analyses were not originally conducted in the notebook, but the code has been ported over for clarity. Specifically, Lasso regression (L1 regularization) is used to conduct feature selection and thus identify which gene families are most strongly predictive and thus putatively (still a hypothesis to be tested) causally associated, making these proteins candidates for future investigation. 
+
+**_NOTE_**:
+Because the predictive model fitting is stochastic, reanalysis will not lead to the same exact outcomes for the fitted model (due to feature selection).
+
+# Motivation
+
+Our goal was to identify which gene families are most strongly predictive of detection suppression, as genes with higher predictive importance are more likely to play a causal role in this phenotype. Detection suppression may arise from a combination of mechanisms that help organisms evade detection when biting their host or during prolonged feeding, avoiding immune system recognition. Given the complexity of this trait, it is likely that multiple independent mechanisms have evolved to achieve detection suppression. However, some of these mechanisms may be shared across species that have independently developed this ability. Because complex phenotypes often have an equally complex genetic basis, it is reasonable to hypothesize that multiple gene families—and even multiple copies within those families—contribute to the evolution of this trait across the Tree of Life.
+
+The idea that gene family evolution—including changes in gene copy number through duplication, transfer, and loss—contributes to phenotypic evolution is well established. For decades, these processes have been recognized as key drivers of phenotypic change and evolutionary innovation (<https://doi.org/10.1017/CBO9780511623486>; <https://doi.org/10.7312/nei-92038-016>; <https://doi.org/10.1111/j.1469-8137.2009.02923.x>).Gene duplication, for example, creates redundant genetic material upon which natural selection may act. This can lead to the acquisition of new functions (neofunctionalization), the partitioning of existing functions across gene copies (subfunctionalization), or a reduction in the expression of both copies (hypofunctionalization) (<https://doi.org/10.1093/plcell/koac076>). Taken together, copy number variation and the processes that generate it have immense potential to contribute to the evolution of complex traits like detection suppression; analyzing how these variations occur across species provides a powerful approach for uncovering the genetic basis of such traits.
+
+# Methods
+We aimed to determine which protease inhibitor gene families have evolutionary histories—characterized by duplication, transfer, and loss—that align most closely with the evolution of detection suppression. Such a pattern would support the hypothesis that these gene families contribute to the development of this trait. To investigate this, we analyzed gene copy number, which reflects the cumulative effects of these evolutionary processes, across both high- and low-confidence protease inhibitors identified using the previously described methods (notebook 08_add_orthogroups.ipynb). To prepare these data for analyses, we normalized the distributions of species gene copy number by log10 transforming them [log10(x+1): adding one to avoid undefined values for log10(0)].
+
+```{r}
+# Define variables indicating where noveltree run outputs are stored
+# The noveltree workflow output directory chelicerata-v1-10062023 is assumed to be in the current
+# working directory. Speciesrax and generax folders are within this result folder.
+result_directory <- "./chelicerata-v1-10062023/"
+speciesrax_dir <- "speciesrax/species_trees/"
+generax_dir <- "generax/per_species_rates/"
+
+# Create two subsets of the data for the high-confidence and
+# low-confidence protease inhibitors
+# Read in protease inhibitor gene family list
+protease_inhibitors_high <- read_tsv("PI_orthogroups_high_qual_06112023.tsv")
+protease_inhibitors_low <-read_tsv("PI_orthogroups_low_qual_06112023.tsv")
+pi_combined <- c(protease_inhibitors_high$Orthogroup, protease_inhibitors_low$Orthogroup)
+
+# Read in the species tree
+tree <-
+  read.tree(paste0(
+    result_directory,
+    speciesrax_dir,
+    "inferred_species_tree.newick"
+  ))
+
+# Read in the GeneRax event counts. Use the
+per_spp_og_events <-
+  list.files(
+    full.names = TRUE,
+    path = paste0(result_directory, generax_dir),
+    pattern = "speciesEventCounts.txt",
+    recursive = TRUE
+  )
+
+message(paste0("Prepared to read in event counts for ", 
+               length(per_spp_og_events), " gene families."))
+
+message("Reading in event count data...")
+# Use this function to read in the actual event count data for each gene family
+gf_node_events <- list()
+for (i in seq_along(per_spp_og_events)) {
+  gf_node_events[[i]] <-
+    get_og_events_per_node(i, per_spp_og_events, tree)
+}
+# These data are a list of matrices (one per-gene family) in a format that is
+# not particularly useful for making comparisons across gene families:
+head(gf_node_events[[1]])
+
+message("Done. Reading in the per-species copy number data for each gene family")
+# Read in the orthogroup species gene counts:
+og_counts <- get_per_spp_og_counts(results_dir = result_directory)
+
+# Get the name of orthogroups, filtering to only include gene families
+# containing five or more species
+ogs <-
+  gsub(".*/", "", per_spp_og_events) |>
+  gsub(pattern = "_.*", replacement = "")
+names(gf_node_events) <- ogs
+keep <- og_counts$Orthogroup[which(og_counts$NumSpecies >= 5)]
+gf_node_events <- gf_node_events[which(ogs %in% keep)]
+
+message(paste0("Reformatting event count data to a matrix and pulling out ",
+               "protease inhibitor gene families"))
+# Create empty dataframes to hold the count of gene speciation events,
+# one row per gene family
+s_counts <-
+  matrix(
+    NA,
+    nrow = length(gf_node_events),
+    ncol = nrow(gf_node_events[[1]]),
+    dimnames = list(names(gf_node_events),
+                    c(gf_node_events[[1]]$node))
+  )
+
+# Populate the empty count dataframe with the observed counts
+for (i in seq_along(gf_node_events)) {
+  t_dat <- t(gf_node_events[[i]][, -1])
+  t_dat <- t_dat
+  s_counts[i, ] <- log10(t_dat[1, ] + 1)
+}
+
+# And pull out the transformed count data for just the protease
+# inhibitor gene families
+s_counts_combined <-
+  s_counts[which(rownames(s_counts) %in% pi_combined), ]
+rownames(s_counts_combined) <- paste0(rownames(s_counts_combined), "_s")
+
+# Okay, these data look much better and are actually in a more useful format:
+head(s_counts_combined)
+message("Finished preparing protease inhibitor event count data.")
+```
+
+Species trait data were handled as follows. Starting from the originally collected data, species for which "host detection suppression" were recorded as NA or "Unknown" were recoded as being species that do not suppress detection. This decision was motivated by the fact that these species do not feed on vertebrates and do not face a selective pressure to evade host recognition through a human-like response.
+
+```{r}
+message("Reading in and recoding trait data.")
+# Read in the species metadata
+dat <- read_tsv("chelicerate-species-metadata.txt")
+dat <- dat[match(tree$tip.label, dat$id), ]
+
+# Prep data for model fitting:
+dat$detection_suppression_recode <- ifelse(is.na(dat$host_detection_suppression) | dat$host_detection_suppression != "Yes", "No", "Yes")
+
+dat$detection_suppression_recode <-
+  as.numeric(as.factor(dat$detection_suppression_recode)) - 1
+
+# Take a look
+head(dat)
+```
+
+Subsequently, to account for the statistical non-independence of species and their phenotypes as induced by their shared evolutionary history (<https://doi.org/10.1086/284325>), we applied a phylogenetic generalized least-squares transformation (<https://doi.org/10.1111/j.0014-3820.2000.tb00026.x>) to both the species trait and gene copy number data using the species tree inferred from the SpeciesRax module (applied to data within the `fit_lasso_counts` function defined in `trait_mapping_functions.R`). This transformation effectively "regresses out" the effect of phylogeny on trait variation. Thus, transformed data are statistically independent and suitable to comparative analyses, representing the trait variation not explained by shared evolutionary history alone.
+
+Using these transformed data, we subsequently used Lasso regression (i.e. L1 regularization) to predict whether species suppress detection using gene copy number. This was implemented using the `familiar` R-package (<https://github.com/alexzwanenburg/familiar>) in a custom function (`fit_lasso_counts`). Specifically, we predicted detection suppression as a binomial outcome, using 10-fold cross-validation with feature selection using the `lasso_binomial` method, clustering features prior to feature selection using the `hclust` method. Upon completion of the model fitting procedure, we obtained both univariate and permutation variable importances. The former can be thought of as the relative contribution of each gene family's copy number in predicting whether species suppress detection given the full set of features. The latter captures the importance of each feature in contributing to prediction accuracy by shuffling the features across the dataset and measuring the resultant decrease in model performance. Additionally, we obtained the coefficients (i.e. effect size and direction of effect) for gene families retained by feature selection. Model performance was evaluated using the area under the curve (AUC) operature, classification accuracy, and the brier and F1 scores. Classification accuracy was further explored with the use of a confusion plot. For more detailed description of these methods as implemented by `familiar`, see the package's wiki: <https://github.com/alexzwanenburg/familiar?tab=readme-ov-file#more-information>.
+
+```{r}
+dir.create('detection_suppression_outputs')
+setwd('detection_suppression_outputs')
+message(paste0("Predicting detection suppression with the counts of protease inhibitor ",
+        "gene family speciation events per-species."))
+# Now, fit models using the set of both high- and low-confidence protease
+# inhibitor gene families
+detection_suppr_og_s_lasso_combined <-
+  fit_lasso_counts(
+    count_data = s_counts_combined,
+    tree,
+    response = dat$detection_suppression_recode,
+    response_name = "detection_suppression_test",
+    predictor_name = "s_counts_proteases_combined",
+    cluster_method = "hclust"
+  )
+
+```
