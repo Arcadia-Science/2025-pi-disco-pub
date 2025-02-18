@@ -8,7 +8,7 @@ output: html_notebook
 ##### Set the working directory to the cloned github repo directory. You may need to modify the path to reflect your setup.
 setwd("~/pi-disco-pub/")
 # Load the required libraries and functions
-source("~/Downloads/trait_mapping_functions.R")
+source("./scripts/trait_mapping_functions.R")
 library(tidyverse)
 library(pbapply)
 library(ape)
@@ -43,8 +43,8 @@ generax_dir <- "generax/per_species_rates/"
 # Create two subsets of the data for the high-confidence and
 # low-confidence protease inhibitors
 # Read in protease inhibitor gene family list
-protease_inhibitors_high <- read_tsv("PI_orthogroups_high_qual_06112023.tsv")
-protease_inhibitors_low <-read_tsv("PI_orthogroups_low_qual_06112023.tsv")
+protease_inhibitors_high <- read_tsv("./datasheets/PI_orthogroups_high_qual_06112023.tsv")
+protease_inhibitors_low <-read_tsv("./datasheets/PI_orthogroups_low_qual_06112023.tsv")
 pi_combined <- c(protease_inhibitors_high$Orthogroup, protease_inhibitors_low$Orthogroup)
 
 # Read in the species tree
@@ -127,7 +127,7 @@ Species trait data were handled as follows. Starting from the originally collect
 ```{r}
 message("Reading in and recoding trait data.")
 # Read in the species metadata
-dat <- read_tsv("chelicerate-species-metadata.txt")
+dat <- read_tsv("./datasheets/chelicerate-species-metadata.txt")
 dat <- dat[match(tree$tip.label, dat$id), ]
 
 # Prep data for model fitting:

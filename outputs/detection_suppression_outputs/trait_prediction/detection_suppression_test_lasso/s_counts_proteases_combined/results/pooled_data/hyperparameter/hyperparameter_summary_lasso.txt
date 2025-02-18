@@ -1,0 +1,11 @@
+learner	lasso
+fs_method	lasso_binomial
+---------------------
+sign_size	5 [2, 9]
+family	binomial (10)
+lambda_min	lambda.min (10)
+n_folds	3 [3, 3]
+normalise	FALSE (10)
+sample_weighting	inverse_number_of_samples (10)
+sample_weighting_beta	-2 [-2, -2]
+ 
