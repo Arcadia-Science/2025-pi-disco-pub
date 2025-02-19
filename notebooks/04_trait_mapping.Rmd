@@ -74,8 +74,7 @@ for (i in seq_along(per_spp_og_events)) {
   gf_node_events[[i]] <-
     get_og_events_per_node(i, per_spp_og_events, tree)
 }
-# These data are a list of matrices (one per-gene family) in a format that is
-# not particularly useful for making comparisons across gene families:
+# These data are a list of matrices (one per-gene family):
 head(gf_node_events[[1]])
 
 message("Done. Reading in the per-species copy number data for each gene family")
@@ -117,7 +116,6 @@ s_counts_combined <-
   s_counts[which(rownames(s_counts) %in% pi_combined), ]
 rownames(s_counts_combined) <- paste0(rownames(s_counts_combined), "_s")
 
-# Okay, these data look much better and are actually in a more useful format:
 head(s_counts_combined)
 message("Finished preparing protease inhibitor event count data.")
 ```
