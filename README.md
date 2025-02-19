@@ -1,8 +1,7 @@
-# TODO: Replace with the name of the repo
+# 2025-pi-disco-pub
 
 [![run with conda](https://img.shields.io/badge/run%20with-conda-3EB049?labelColor=000000&logo=anaconda)](https://docs.conda.io/projects/miniconda/en/latest/)
 
-Note: Analysis repo names should be prefixed with the year (ie `2024-noveltree-analysis`)
 
 ## Purpose
 
