@@ -1,0 +1,565 @@
+2025-02-18 13:18:34	MESSAGE	Setup report: Validation is internal only.
+2025-02-18 13:18:34	MESSAGE	Setup report: Feature selection and model building on 1 repetitions of 10-fold cross validation of the training data.
+2025-02-18 13:18:34	MESSAGE	Creating iterations: Starting creation of iterations.
+2025-02-18 13:18:34	MESSAGE	Creating iterations: Finished creation of iterations.
+2025-02-18 13:18:34	MESSAGE	Creating iterations: New project id is: '20250218131834'.
+2025-02-18 13:18:36	MESSAGE	
+Pre-processing: Starting preprocessing for run 1 of 10.
+2025-02-18 13:18:36	MESSAGE	  Pre-processing: 36 samples were initially available.
+2025-02-18 13:18:36	MESSAGE	  Pre-processing: 0 samples were removed because of missing outcome data. 36 samples remain.
+2025-02-18 13:18:36	MESSAGE	  Pre-processing: 36 features were initially available.
+2025-02-18 13:18:36	MESSAGE	  Pre-processing: 0 features were removed because of a high fraction of missing values. 36 features remain.
+2025-02-18 13:18:36	MESSAGE	  Pre-processing: 0 samples were removed because of missing feature data. 36 samples remain.
+2025-02-18 13:18:36	MESSAGE	  Pre-processing: 0 features were removed due to invariance. 36 features remain.
+2025-02-18 13:18:36	MESSAGE	  Pre-processing: Adding value distribution statistics to features.
+2025-02-18 13:18:36	MESSAGE	  Pre-processing: Performing transformations to normalise feature value distributions.
+2025-02-18 13:18:36	MESSAGE	  Pre-processing: Feature distributions have been transformed for normalisation.
+2025-02-18 13:18:36	MESSAGE	  Pre-processing: Extracting normalisation parameters from feature data.
+2025-02-18 13:18:36	MESSAGE	  Pre-processing: Feature data were normalised.
+2025-02-18 13:18:36	MESSAGE	  Pre-processing: Adding imputation information to features.
+2025-02-18 13:18:37	MESSAGE	  Pre-processing: Starting clustering of redundant features
+2025-02-18 13:18:37	MESSAGE	    Computing similarity between 36 features using the mutual_information metric for clustering using the hclust method.
+2025-02-18 13:18:37	MESSAGE	    21 feature clusteres were created from 36 features. 6 clusters contain more than one feature. The remaining 15 clusters are singular.
+2025-02-18 13:18:37	MESSAGE	
+Pre-processing: Starting preprocessing for run 2 of 10.
+2025-02-18 13:18:37	MESSAGE	  Pre-processing: 36 samples were initially available.
+2025-02-18 13:18:37	MESSAGE	  Pre-processing: 0 samples were removed because of missing outcome data. 36 samples remain.
+2025-02-18 13:18:37	MESSAGE	  Pre-processing: 36 features were initially available.
+2025-02-18 13:18:37	MESSAGE	  Pre-processing: 0 features were removed because of a high fraction of missing values. 36 features remain.
+2025-02-18 13:18:37	MESSAGE	  Pre-processing: 0 samples were removed because of missing feature data. 36 samples remain.
+2025-02-18 13:18:37	MESSAGE	  Pre-processing: 0 features were removed due to invariance. 36 features remain.
+2025-02-18 13:18:37	MESSAGE	  Pre-processing: Adding value distribution statistics to features.
+2025-02-18 13:18:37	MESSAGE	  Pre-processing: Performing transformations to normalise feature value distributions.
+2025-02-18 13:18:37	MESSAGE	  Pre-processing: Feature distributions have been transformed for normalisation.
+2025-02-18 13:18:37	MESSAGE	  Pre-processing: Extracting normalisation parameters from feature data.
+2025-02-18 13:18:37	MESSAGE	  Pre-processing: Feature data were normalised.
+2025-02-18 13:18:37	MESSAGE	  Pre-processing: Adding imputation information to features.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: Starting clustering of redundant features
+2025-02-18 13:18:38	MESSAGE	    Computing similarity between 36 features using the mutual_information metric for clustering using the hclust method.
+2025-02-18 13:18:38	MESSAGE	    23 feature clusteres were created from 36 features. 4 clusters contain more than one feature. The remaining 19 clusters are singular.
+2025-02-18 13:18:38	MESSAGE	
+Pre-processing: Starting preprocessing for run 3 of 10.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: 36 samples were initially available.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: 0 samples were removed because of missing outcome data. 36 samples remain.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: 36 features were initially available.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: 0 features were removed because of a high fraction of missing values. 36 features remain.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: 0 samples were removed because of missing feature data. 36 samples remain.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: 0 features were removed due to invariance. 36 features remain.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: Adding value distribution statistics to features.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: Performing transformations to normalise feature value distributions.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: Feature distributions have been transformed for normalisation.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: Extracting normalisation parameters from feature data.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: Feature data were normalised.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: Adding imputation information to features.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: Starting clustering of redundant features
+2025-02-18 13:18:38	MESSAGE	    Computing similarity between 36 features using the mutual_information metric for clustering using the hclust method.
+2025-02-18 13:18:38	MESSAGE	    22 feature clusteres were created from 36 features. 6 clusters contain more than one feature. The remaining 16 clusters are singular.
+2025-02-18 13:18:38	MESSAGE	
+Pre-processing: Starting preprocessing for run 4 of 10.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: 36 samples were initially available.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: 0 samples were removed because of missing outcome data. 36 samples remain.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: 36 features were initially available.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: 0 features were removed because of a high fraction of missing values. 36 features remain.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: 0 samples were removed because of missing feature data. 36 samples remain.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: 0 features were removed due to invariance. 36 features remain.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: Adding value distribution statistics to features.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: Performing transformations to normalise feature value distributions.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: Feature distributions have been transformed for normalisation.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: Extracting normalisation parameters from feature data.
+2025-02-18 13:18:38	MESSAGE	  Pre-processing: Feature data were normalised.
+2025-02-18 13:18:39	MESSAGE	  Pre-processing: Adding imputation information to features.
+2025-02-18 13:18:39	MESSAGE	  Pre-processing: Starting clustering of redundant features
+2025-02-18 13:18:39	MESSAGE	    Computing similarity between 36 features using the mutual_information metric for clustering using the hclust method.
+2025-02-18 13:18:39	MESSAGE	    22 feature clusteres were created from 36 features. 5 clusters contain more than one feature. The remaining 17 clusters are singular.
+2025-02-18 13:18:39	MESSAGE	
+Pre-processing: Starting preprocessing for run 5 of 10.
+2025-02-18 13:18:39	MESSAGE	  Pre-processing: 36 samples were initially available.
+2025-02-18 13:18:39	MESSAGE	  Pre-processing: 0 samples were removed because of missing outcome data. 36 samples remain.
+2025-02-18 13:18:39	MESSAGE	  Pre-processing: 36 features were initially available.
+2025-02-18 13:18:39	MESSAGE	  Pre-processing: 0 features were removed because of a high fraction of missing values. 36 features remain.
+2025-02-18 13:18:39	MESSAGE	  Pre-processing: 0 samples were removed because of missing feature data. 36 samples remain.
+2025-02-18 13:18:39	MESSAGE	  Pre-processing: 0 features were removed due to invariance. 36 features remain.
+2025-02-18 13:18:39	MESSAGE	  Pre-processing: Adding value distribution statistics to features.
+2025-02-18 13:18:39	MESSAGE	  Pre-processing: Performing transformations to normalise feature value distributions.
+2025-02-18 13:18:39	MESSAGE	  Pre-processing: Feature distributions have been transformed for normalisation.
+2025-02-18 13:18:39	MESSAGE	  Pre-processing: Extracting normalisation parameters from feature data.
+2025-02-18 13:18:39	MESSAGE	  Pre-processing: Feature data were normalised.
+2025-02-18 13:18:39	MESSAGE	  Pre-processing: Adding imputation information to features.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: Starting clustering of redundant features
+2025-02-18 13:18:40	MESSAGE	    Computing similarity between 36 features using the mutual_information metric for clustering using the hclust method.
+2025-02-18 13:18:40	MESSAGE	    23 feature clusteres were created from 36 features. 4 clusters contain more than one feature. The remaining 19 clusters are singular.
+2025-02-18 13:18:40	MESSAGE	
+Pre-processing: Starting preprocessing for run 6 of 10.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: 36 samples were initially available.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: 0 samples were removed because of missing outcome data. 36 samples remain.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: 36 features were initially available.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: 0 features were removed because of a high fraction of missing values. 36 features remain.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: 0 samples were removed because of missing feature data. 36 samples remain.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: 0 features were removed due to invariance. 36 features remain.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: Adding value distribution statistics to features.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: Performing transformations to normalise feature value distributions.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: Feature distributions have been transformed for normalisation.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: Extracting normalisation parameters from feature data.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: Feature data were normalised.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: Adding imputation information to features.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: Starting clustering of redundant features
+2025-02-18 13:18:40	MESSAGE	    Computing similarity between 36 features using the mutual_information metric for clustering using the hclust method.
+2025-02-18 13:18:40	MESSAGE	    22 feature clusteres were created from 36 features. 5 clusters contain more than one feature. The remaining 17 clusters are singular.
+2025-02-18 13:18:40	MESSAGE	
+Pre-processing: Starting preprocessing for run 7 of 10.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: 36 samples were initially available.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: 0 samples were removed because of missing outcome data. 36 samples remain.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: 36 features were initially available.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: 0 features were removed because of a high fraction of missing values. 36 features remain.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: 0 samples were removed because of missing feature data. 36 samples remain.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: 0 features were removed due to invariance. 36 features remain.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: Adding value distribution statistics to features.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: Performing transformations to normalise feature value distributions.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: Feature distributions have been transformed for normalisation.
+2025-02-18 13:18:40	MESSAGE	  Pre-processing: Extracting normalisation parameters from feature data.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: Feature data were normalised.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: Adding imputation information to features.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: Starting clustering of redundant features
+2025-02-18 13:18:41	MESSAGE	    Computing similarity between 36 features using the mutual_information metric for clustering using the hclust method.
+2025-02-18 13:18:41	MESSAGE	    24 feature clusteres were created from 36 features. 4 clusters contain more than one feature. The remaining 20 clusters are singular.
+2025-02-18 13:18:41	MESSAGE	
+Pre-processing: Starting preprocessing for run 8 of 10.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: 36 samples were initially available.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: 0 samples were removed because of missing outcome data. 36 samples remain.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: 36 features were initially available.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: 0 features were removed because of a high fraction of missing values. 36 features remain.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: 0 samples were removed because of missing feature data. 36 samples remain.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: 0 features were removed due to invariance. 36 features remain.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: Adding value distribution statistics to features.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: Performing transformations to normalise feature value distributions.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: Feature distributions have been transformed for normalisation.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: Extracting normalisation parameters from feature data.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: Feature data were normalised.
+2025-02-18 13:18:41	MESSAGE	  Pre-processing: Adding imputation information to features.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: Starting clustering of redundant features
+2025-02-18 13:18:42	MESSAGE	    Computing similarity between 36 features using the mutual_information metric for clustering using the hclust method.
+2025-02-18 13:18:42	MESSAGE	    25 feature clusteres were created from 36 features. 3 clusters contain more than one feature. The remaining 22 clusters are singular.
+2025-02-18 13:18:42	MESSAGE	
+Pre-processing: Starting preprocessing for run 9 of 10.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: 36 samples were initially available.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: 0 samples were removed because of missing outcome data. 36 samples remain.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: 36 features were initially available.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: 0 features were removed because of a high fraction of missing values. 36 features remain.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: 0 samples were removed because of missing feature data. 36 samples remain.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: 0 features were removed due to invariance. 36 features remain.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: Adding value distribution statistics to features.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: Performing transformations to normalise feature value distributions.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: Feature distributions have been transformed for normalisation.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: Extracting normalisation parameters from feature data.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: Feature data were normalised.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: Adding imputation information to features.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: Starting clustering of redundant features
+2025-02-18 13:18:42	MESSAGE	    Computing similarity between 36 features using the mutual_information metric for clustering using the hclust method.
+2025-02-18 13:18:42	MESSAGE	    22 feature clusteres were created from 36 features. 6 clusters contain more than one feature. The remaining 16 clusters are singular.
+2025-02-18 13:18:42	MESSAGE	
+Pre-processing: Starting preprocessing for run 10 of 10.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: 36 samples were initially available.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: 0 samples were removed because of missing outcome data. 36 samples remain.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: 36 features were initially available.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: 0 features were removed because of a high fraction of missing values. 36 features remain.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: 0 samples were removed because of missing feature data. 36 samples remain.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: 0 features were removed due to invariance. 36 features remain.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: Adding value distribution statistics to features.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: Performing transformations to normalise feature value distributions.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: Feature distributions have been transformed for normalisation.
+2025-02-18 13:18:42	MESSAGE	  Pre-processing: Extracting normalisation parameters from feature data.
+2025-02-18 13:18:43	MESSAGE	  Pre-processing: Feature data were normalised.
+2025-02-18 13:18:43	MESSAGE	  Pre-processing: Adding imputation information to features.
+2025-02-18 13:18:43	MESSAGE	  Pre-processing: Starting clustering of redundant features
+2025-02-18 13:18:43	MESSAGE	    Computing similarity between 36 features using the mutual_information metric for clustering using the hclust method.
+2025-02-18 13:18:43	MESSAGE	    22 feature clusteres were created from 36 features. 6 clusters contain more than one feature. The remaining 16 clusters are singular.
+2025-02-18 13:18:43	MESSAGE	
+Feature selection: starting feature selection using "lasso_binomial" method.
+2025-02-18 13:18:43	MESSAGE	  Hyperparameter optimisation: Starting parameter optimisation for the lasso_binomial variable importance method.
+2025-02-18 13:18:43	MESSAGE	
+2025-02-18 13:18:43	MESSAGE	    Starting hyperparameter optimisation for data subsample 1 of 10.
+2025-02-18 13:18:43	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:18:43	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:18:43	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:18:44	MESSAGE	    Hyperparameter optimisation: All hyperparameters are fixed. No optimisation is required.
+2025-02-18 13:18:44	MESSAGE	
+2025-02-18 13:18:44	MESSAGE	    Starting hyperparameter optimisation for data subsample 2 of 10.
+2025-02-18 13:18:44	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:18:44	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:18:44	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:18:44	MESSAGE	    Hyperparameter optimisation: All hyperparameters are fixed. No optimisation is required.
+2025-02-18 13:18:44	MESSAGE	
+2025-02-18 13:18:44	MESSAGE	    Starting hyperparameter optimisation for data subsample 3 of 10.
+2025-02-18 13:18:44	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:18:44	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:18:44	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:18:44	MESSAGE	    Hyperparameter optimisation: All hyperparameters are fixed. No optimisation is required.
+2025-02-18 13:18:44	MESSAGE	
+2025-02-18 13:18:44	MESSAGE	    Starting hyperparameter optimisation for data subsample 4 of 10.
+2025-02-18 13:18:44	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:18:44	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:18:44	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:18:45	MESSAGE	    Hyperparameter optimisation: All hyperparameters are fixed. No optimisation is required.
+2025-02-18 13:18:45	MESSAGE	
+2025-02-18 13:18:45	MESSAGE	    Starting hyperparameter optimisation for data subsample 5 of 10.
+2025-02-18 13:18:45	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:18:45	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:18:45	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:18:45	MESSAGE	    Hyperparameter optimisation: All hyperparameters are fixed. No optimisation is required.
+2025-02-18 13:18:45	MESSAGE	
+2025-02-18 13:18:45	MESSAGE	    Starting hyperparameter optimisation for data subsample 6 of 10.
+2025-02-18 13:18:45	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:18:45	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:18:45	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:18:45	MESSAGE	    Hyperparameter optimisation: All hyperparameters are fixed. No optimisation is required.
+2025-02-18 13:18:46	MESSAGE	
+2025-02-18 13:18:46	MESSAGE	    Starting hyperparameter optimisation for data subsample 7 of 10.
+2025-02-18 13:18:46	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:18:46	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:18:46	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:18:46	MESSAGE	    Hyperparameter optimisation: All hyperparameters are fixed. No optimisation is required.
+2025-02-18 13:18:46	MESSAGE	
+2025-02-18 13:18:46	MESSAGE	    Starting hyperparameter optimisation for data subsample 8 of 10.
+2025-02-18 13:18:46	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:18:46	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:18:46	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:18:46	MESSAGE	    Hyperparameter optimisation: All hyperparameters are fixed. No optimisation is required.
+2025-02-18 13:18:46	MESSAGE	
+2025-02-18 13:18:46	MESSAGE	    Starting hyperparameter optimisation for data subsample 9 of 10.
+2025-02-18 13:18:46	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:18:46	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:18:46	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:18:47	MESSAGE	    Hyperparameter optimisation: All hyperparameters are fixed. No optimisation is required.
+2025-02-18 13:18:47	MESSAGE	
+2025-02-18 13:18:47	MESSAGE	    Starting hyperparameter optimisation for data subsample 10 of 10.
+2025-02-18 13:18:47	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:18:47	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:18:47	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:18:47	MESSAGE	    Hyperparameter optimisation: All hyperparameters are fixed. No optimisation is required.
+2025-02-18 13:18:47	MESSAGE	
+2025-02-18 13:18:47	MESSAGE	  Hyperparameter optimisation: Completed parameter optimisation for the lasso_binomial variable importance method.
+2025-02-18 13:18:47	MESSAGE	Feature selection: feature selection using "lasso_binomial" method has been completed.
+2025-02-18 13:18:47	MESSAGE	
+Model building: starting model building using "lasso" learner, based on "lasso_binomial" feature selection.
+2025-02-18 13:18:48	MESSAGE	  Hyperparameter optimisation: Starting parameter optimisation for the lasso learner, based on variable importances from the lasso_binomial variable importance method.
+2025-02-18 13:18:48	MESSAGE	
+2025-02-18 13:18:48	MESSAGE	    Starting hyperparameter optimisation for data subsample 1 of 10.
+2025-02-18 13:18:48	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:18:48	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:18:48	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:18:48	MESSAGE	      Computing variable importance for 20 bootstraps.
+2025-02-18 13:18:48	MESSAGE	      Compute initial model performance based on 4 hyperparameter sets.
+2025-02-18 13:18:49	MESSAGE	      Hyperparameter optimisation: Initialisation complete: summary score: 0.8000; validation optimisation score: 0.8000; auc_roc: 0.9000; sign_size: 5
+2025-02-18 13:18:49	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:18:49	MESSAGE	      Hyperparameter optimisation: SMBO iteration 1: summary score: 0.7000; validation optimisation score: 0.7000; auc_roc: 0.8500; sign_size: 5
+2025-02-18 13:18:49	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:18:49	MESSAGE	      Hyperparameter optimisation: SMBO iteration 2: summary score: 0.7111; validation optimisation score: 0.7111; auc_roc: 0.8556; sign_size: 5
+2025-02-18 13:18:49	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:18:50	MESSAGE	      Hyperparameter optimisation: SMBO iteration 3: summary score: 0.6533; validation optimisation score: 0.6533; auc_roc: 0.8267; sign_size: 6
+2025-02-18 13:18:50	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:18:50	MESSAGE	      Hyperparameter optimisation: SMBO iteration 4: summary score: 0.6395; validation optimisation score: 0.6395; auc_roc: 0.8198; sign_size: 5
+2025-02-18 13:18:50	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:18:50	MESSAGE	      Hyperparameter optimisation: SMBO iteration 5: summary score: 0.6996; validation optimisation score: 0.6996; auc_roc: 0.8498; sign_size: 5
+2025-02-18 13:18:50	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:18:51	MESSAGE	      Hyperparameter optimisation: SMBO iteration 6: summary score: 0.7354; validation optimisation score: 0.7354; auc_roc: 0.8677; sign_size: 5
+2025-02-18 13:18:51	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:18:51	MESSAGE	      Hyperparameter optimisation: SMBO iteration 7: summary score: 0.7506; validation optimisation score: 0.7506; auc_roc: 0.8753; sign_size: 5
+2025-02-18 13:18:51	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:18:51	MESSAGE	      Hyperparameter optimisation: SMBO iteration 8: summary score: 0.7148; validation optimisation score: 0.7148; auc_roc: 0.8574; sign_size: 5
+2025-02-18 13:18:51	MESSAGE	    Hyperparameter optimisation: Optimisation stopped early as convergence was achieved.
+2025-02-18 13:18:51	MESSAGE	    Hyperparameter optimisation: A suitable set of hyperparameters was identified: summary score: 0.7148; validation optimisation score: 0.7148; auc_roc: 0.8574; sign_size: 5
+2025-02-18 13:18:51	MESSAGE	
+2025-02-18 13:18:51	MESSAGE	    Starting hyperparameter optimisation for data subsample 2 of 10.
+2025-02-18 13:18:51	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:18:51	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:18:51	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:18:52	MESSAGE	      Computing variable importance for 20 bootstraps.
+2025-02-18 13:18:52	MESSAGE	      Compute initial model performance based on 4 hyperparameter sets.
+2025-02-18 13:18:52	MESSAGE	      Hyperparameter optimisation: Initialisation complete: summary score: 0.8750; validation optimisation score: 0.8750; auc_roc: 0.9375; sign_size: 5
+2025-02-18 13:18:52	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:18:52	MESSAGE	      Hyperparameter optimisation: SMBO iteration 1: summary score: 0.8750; validation optimisation score: 0.8750; auc_roc: 0.9375; sign_size: 3
+2025-02-18 13:18:53	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:18:53	MESSAGE	      Hyperparameter optimisation: SMBO iteration 2: summary score: 0.9090; validation optimisation score: 0.9090; auc_roc: 0.9545; sign_size: 5
+2025-02-18 13:18:53	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:18:53	MESSAGE	      Hyperparameter optimisation: SMBO iteration 3: summary score: 0.9090; validation optimisation score: 0.9090; auc_roc: 0.9545; sign_size: 3
+2025-02-18 13:18:53	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:18:53	MESSAGE	      Hyperparameter optimisation: SMBO iteration 4: summary score: 0.7276; validation optimisation score: 0.7276; auc_roc: 0.8638; sign_size: 5
+2025-02-18 13:18:53	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:18:53	MESSAGE	      Hyperparameter optimisation: SMBO iteration 5: summary score: 0.7730; validation optimisation score: 0.7730; auc_roc: 0.8865; sign_size: 5
+2025-02-18 13:18:53	MESSAGE	      Intensify step 1 using 5 challenger hyperparameter sets.
+2025-02-18 13:18:54	MESSAGE	      Hyperparameter optimisation: SMBO iteration 6: summary score: 0.8054; validation optimisation score: 0.8054; auc_roc: 0.9027; sign_size: 5
+2025-02-18 13:18:54	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:18:54	MESSAGE	      Hyperparameter optimisation: SMBO iteration 7: summary score: 0.8118; validation optimisation score: 0.8118; auc_roc: 0.9059; sign_size: 3
+2025-02-18 13:18:54	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:18:54	MESSAGE	      Hyperparameter optimisation: SMBO iteration 8: summary score: 0.7464; validation optimisation score: 0.7464; auc_roc: 0.8732; sign_size: 3
+2025-02-18 13:18:54	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:18:55	MESSAGE	      Hyperparameter optimisation: SMBO iteration 9: summary score: 0.7499; validation optimisation score: 0.7499; auc_roc: 0.8749; sign_size: 3
+2025-02-18 13:18:55	MESSAGE	      Intensify step 1 using 5 challenger hyperparameter sets.
+2025-02-18 13:18:55	MESSAGE	      Hyperparameter optimisation: SMBO iteration 10: summary score: 0.7524; validation optimisation score: 0.7524; auc_roc: 0.8762; sign_size: 5
+2025-02-18 13:18:55	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:18:55	MESSAGE	      Hyperparameter optimisation: SMBO iteration 11: summary score: 0.7540; validation optimisation score: 0.7540; auc_roc: 0.8770; sign_size: 3
+2025-02-18 13:18:55	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:18:56	MESSAGE	      Hyperparameter optimisation: SMBO iteration 12: summary score: 0.7536; validation optimisation score: 0.7536; auc_roc: 0.8768; sign_size: 3
+2025-02-18 13:18:56	MESSAGE	    Hyperparameter optimisation: Optimisation stopped early as convergence was achieved.
+2025-02-18 13:18:56	MESSAGE	    Hyperparameter optimisation: A suitable set of hyperparameters was identified: summary score: 0.7536; validation optimisation score: 0.7536; auc_roc: 0.8768; sign_size: 3
+2025-02-18 13:18:56	MESSAGE	
+2025-02-18 13:18:56	MESSAGE	    Starting hyperparameter optimisation for data subsample 3 of 10.
+2025-02-18 13:18:56	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:18:56	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:18:56	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:18:56	MESSAGE	      Computing variable importance for 20 bootstraps.
+2025-02-18 13:18:56	MESSAGE	      Compute initial model performance based on 4 hyperparameter sets.
+2025-02-18 13:18:56	MESSAGE	      Hyperparameter optimisation: Initialisation complete: summary score: 0.5758; validation optimisation score: 0.5758; auc_roc: 0.7879; sign_size: 1
+2025-02-18 13:18:57	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:18:57	MESSAGE	      Hyperparameter optimisation: SMBO iteration 1: summary score: 0.7307; validation optimisation score: 0.7307; auc_roc: 0.8654; sign_size: 2
+2025-02-18 13:18:57	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:18:57	MESSAGE	      Hyperparameter optimisation: SMBO iteration 2: summary score: 0.7879; validation optimisation score: 0.7879; auc_roc: 0.8939; sign_size: 8
+2025-02-18 13:18:57	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:18:57	MESSAGE	      Hyperparameter optimisation: SMBO iteration 3: summary score: 0.6343; validation optimisation score: 0.6343; auc_roc: 0.8172; sign_size: 2
+2025-02-18 13:18:57	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:18:57	MESSAGE	      Hyperparameter optimisation: SMBO iteration 4: summary score: 0.7074; validation optimisation score: 0.7074; auc_roc: 0.8537; sign_size: 2
+2025-02-18 13:18:58	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:18:58	MESSAGE	      Hyperparameter optimisation: SMBO iteration 5: summary score: 0.6895; validation optimisation score: 0.6895; auc_roc: 0.8448; sign_size: 2
+2025-02-18 13:18:58	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:18:58	MESSAGE	      Hyperparameter optimisation: SMBO iteration 6: summary score: 0.6753; validation optimisation score: 0.6753; auc_roc: 0.8376; sign_size: 8
+2025-02-18 13:18:58	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:18:59	MESSAGE	      Hyperparameter optimisation: SMBO iteration 7: summary score: 0.6582; validation optimisation score: 0.6582; auc_roc: 0.8291; sign_size: 8
+2025-02-18 13:18:59	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:18:59	MESSAGE	      Hyperparameter optimisation: SMBO iteration 8: summary score: 0.6259; validation optimisation score: 0.6259; auc_roc: 0.8129; sign_size: 8
+2025-02-18 13:18:59	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:18:59	MESSAGE	      Hyperparameter optimisation: SMBO iteration 9: summary score: 0.6675; validation optimisation score: 0.6675; auc_roc: 0.8337; sign_size: 8
+2025-02-18 13:19:00	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:19:00	MESSAGE	      Hyperparameter optimisation: SMBO iteration 10: summary score: 0.6007; validation optimisation score: 0.6007; auc_roc: 0.8004; sign_size: 8
+2025-02-18 13:19:00	MESSAGE	    Hyperparameter optimisation: Optimisation stopped early as convergence was achieved.
+2025-02-18 13:19:00	MESSAGE	    Hyperparameter optimisation: A suitable set of hyperparameters was identified: summary score: 0.6007; validation optimisation score: 0.6007; auc_roc: 0.8004; sign_size: 8
+2025-02-18 13:19:00	MESSAGE	
+2025-02-18 13:19:00	MESSAGE	    Starting hyperparameter optimisation for data subsample 4 of 10.
+2025-02-18 13:19:00	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:19:00	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:19:00	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:19:00	MESSAGE	      Computing variable importance for 20 bootstraps.
+2025-02-18 13:19:01	MESSAGE	      Compute initial model performance based on 4 hyperparameter sets.
+2025-02-18 13:19:01	MESSAGE	      Hyperparameter optimisation: Initialisation complete: summary score: 0.7500; validation optimisation score: 0.7500; auc_roc: 0.8750; sign_size: 9
+2025-02-18 13:19:01	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:19:01	MESSAGE	      Hyperparameter optimisation: SMBO iteration 1: summary score: 0.7500; validation optimisation score: 0.7500; auc_roc: 0.8750; sign_size: 6
+2025-02-18 13:19:01	MESSAGE	      Intensify step 1 using 4 challenger hyperparameter sets.
+2025-02-18 13:19:01	MESSAGE	      Hyperparameter optimisation: SMBO iteration 2: summary score: 0.6250; validation optimisation score: 0.6250; auc_roc: 0.8125; sign_size: 9
+2025-02-18 13:19:01	MESSAGE	      Intensify step 1 using 4 challenger hyperparameter sets.
+2025-02-18 13:19:01	MESSAGE	      Hyperparameter optimisation: SMBO iteration 3: summary score: 0.7500; validation optimisation score: 0.7500; auc_roc: 0.8750; sign_size: 3
+2025-02-18 13:19:01	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:19:02	MESSAGE	      Hyperparameter optimisation: SMBO iteration 4: summary score: 0.8125; validation optimisation score: 0.8125; auc_roc: 0.9062; sign_size: 3
+2025-02-18 13:19:02	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:19:02	MESSAGE	      Hyperparameter optimisation: SMBO iteration 5: summary score: 0.7761; validation optimisation score: 0.7761; auc_roc: 0.8881; sign_size: 2
+2025-02-18 13:19:02	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:19:02	MESSAGE	      Hyperparameter optimisation: SMBO iteration 6: summary score: 0.6437; validation optimisation score: 0.6437; auc_roc: 0.8218; sign_size: 9
+2025-02-18 13:19:02	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:19:03	MESSAGE	      Hyperparameter optimisation: SMBO iteration 7: summary score: 0.6708; validation optimisation score: 0.6708; auc_roc: 0.8354; sign_size: 9
+2025-02-18 13:19:03	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:19:03	MESSAGE	      Hyperparameter optimisation: SMBO iteration 8: summary score: 0.6703; validation optimisation score: 0.6703; auc_roc: 0.8351; sign_size: 9
+2025-02-18 13:19:03	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:19:03	MESSAGE	      Hyperparameter optimisation: SMBO iteration 9: summary score: 0.6884; validation optimisation score: 0.6884; auc_roc: 0.8442; sign_size: 9
+2025-02-18 13:19:04	MESSAGE	      Intensify step 1 using 8 challenger hyperparameter sets.
+2025-02-18 13:19:04	MESSAGE	      Hyperparameter optimisation: SMBO iteration 10: summary score: 0.6545; validation optimisation score: 0.6545; auc_roc: 0.8273; sign_size: 9
+2025-02-18 13:19:04	MESSAGE	    Hyperparameter optimisation: Optimisation stopped early as convergence was achieved.
+2025-02-18 13:19:04	MESSAGE	    Hyperparameter optimisation: A suitable set of hyperparameters was identified: summary score: 0.6545; validation optimisation score: 0.6545; auc_roc: 0.8273; sign_size: 9
+2025-02-18 13:19:04	MESSAGE	
+2025-02-18 13:19:04	MESSAGE	    Starting hyperparameter optimisation for data subsample 5 of 10.
+2025-02-18 13:19:04	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:19:04	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:19:04	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:19:04	MESSAGE	      Computing variable importance for 20 bootstraps.
+2025-02-18 13:19:05	MESSAGE	      Compute initial model performance based on 4 hyperparameter sets.
+2025-02-18 13:19:05	MESSAGE	      Hyperparameter optimisation: Initialisation complete: summary score: 0.6667; validation optimisation score: 0.6667; auc_roc: 0.8333; sign_size: 2
+2025-02-18 13:19:05	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:19:05	MESSAGE	      Hyperparameter optimisation: SMBO iteration 1: summary score: 0.8056; validation optimisation score: 0.8056; auc_roc: 0.9028; sign_size: 8
+2025-02-18 13:19:05	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:19:05	MESSAGE	      Hyperparameter optimisation: SMBO iteration 2: summary score: 0.8704; validation optimisation score: 0.8704; auc_roc: 0.9352; sign_size: 8
+2025-02-18 13:19:05	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:19:05	MESSAGE	      Hyperparameter optimisation: SMBO iteration 3: summary score: 0.7861; validation optimisation score: 0.7861; auc_roc: 0.8931; sign_size: 8
+2025-02-18 13:19:05	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:19:06	MESSAGE	      Hyperparameter optimisation: SMBO iteration 4: summary score: 0.8289; validation optimisation score: 0.8289; auc_roc: 0.9144; sign_size: 8
+2025-02-18 13:19:06	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:19:06	MESSAGE	      Hyperparameter optimisation: SMBO iteration 5: summary score: 0.7443; validation optimisation score: 0.7443; auc_roc: 0.8722; sign_size: 8
+2025-02-18 13:19:06	MESSAGE	    Hyperparameter optimisation: Optimisation stopped early as convergence was achieved.
+2025-02-18 13:19:06	MESSAGE	    Hyperparameter optimisation: A suitable set of hyperparameters was identified: summary score: 0.7443; validation optimisation score: 0.7443; auc_roc: 0.8722; sign_size: 8
+2025-02-18 13:19:06	MESSAGE	
+2025-02-18 13:19:06	MESSAGE	    Starting hyperparameter optimisation for data subsample 6 of 10.
+2025-02-18 13:19:06	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:19:06	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:19:06	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:19:06	MESSAGE	      Computing variable importance for 20 bootstraps.
+2025-02-18 13:19:07	MESSAGE	      Compute initial model performance based on 4 hyperparameter sets.
+2025-02-18 13:19:07	MESSAGE	      Hyperparameter optimisation: Initialisation complete: summary score: 0.0000; validation optimisation score: 0.0000; auc_roc: 0.5000; sign_size: 1
+2025-02-18 13:19:07	MESSAGE	      Intensify step 1 using 9 challenger hyperparameter sets.
+2025-02-18 13:19:07	MESSAGE	      Hyperparameter optimisation: SMBO iteration 1: summary score: 1.0000; validation optimisation score: 1.0000; auc_roc: 1.0000; sign_size: 8
+2025-02-18 13:19:07	MESSAGE	      Intensify step 1 using 9 challenger hyperparameter sets.
+2025-02-18 13:19:07	MESSAGE	      Hyperparameter optimisation: SMBO iteration 2: summary score: 0.6571; validation optimisation score: 0.6571; auc_roc: 0.8286; sign_size: 8
+2025-02-18 13:19:07	MESSAGE	      Intensify step 1 using 9 challenger hyperparameter sets.
+2025-02-18 13:19:08	MESSAGE	      Hyperparameter optimisation: SMBO iteration 3: summary score: 0.7048; validation optimisation score: 0.7048; auc_roc: 0.8524; sign_size: 8
+2025-02-18 13:19:08	MESSAGE	      Intensify step 1 using 9 challenger hyperparameter sets.
+2025-02-18 13:19:08	MESSAGE	      Hyperparameter optimisation: SMBO iteration 4: summary score: 0.7071; validation optimisation score: 0.7071; auc_roc: 0.8536; sign_size: 8
+2025-02-18 13:19:08	MESSAGE	      Intensify step 1 using 9 challenger hyperparameter sets.
+2025-02-18 13:19:08	MESSAGE	      Hyperparameter optimisation: SMBO iteration 5: summary score: 0.7157; validation optimisation score: 0.7157; auc_roc: 0.8579; sign_size: 8
+2025-02-18 13:19:08	MESSAGE	    Hyperparameter optimisation: Optimisation stopped early as convergence was achieved.
+2025-02-18 13:19:08	MESSAGE	    Hyperparameter optimisation: A suitable set of hyperparameters was identified: summary score: 0.7157; validation optimisation score: 0.7157; auc_roc: 0.8579; sign_size: 8
+2025-02-18 13:19:08	MESSAGE	
+2025-02-18 13:19:08	MESSAGE	    Starting hyperparameter optimisation for data subsample 7 of 10.
+2025-02-18 13:19:08	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:19:08	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:19:08	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:19:09	MESSAGE	      Computing variable importance for 20 bootstraps.
+2025-02-18 13:19:09	MESSAGE	      Compute initial model performance based on 4 hyperparameter sets.
+2025-02-18 13:19:09	MESSAGE	      Hyperparameter optimisation: Initialisation complete: summary score: 0.9444; validation optimisation score: 0.9444; auc_roc: 0.9722; sign_size: 2
+2025-02-18 13:19:09	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:19:09	MESSAGE	      Hyperparameter optimisation: SMBO iteration 1: summary score: 1.0000; validation optimisation score: 1.0000; auc_roc: 1.0000; sign_size: 7
+2025-02-18 13:19:10	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:19:10	MESSAGE	      Hyperparameter optimisation: SMBO iteration 2: summary score: 0.8750; validation optimisation score: 0.8750; auc_roc: 0.9375; sign_size: 7
+2025-02-18 13:19:10	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:19:10	MESSAGE	      Hyperparameter optimisation: SMBO iteration 3: summary score: 0.8595; validation optimisation score: 0.8595; auc_roc: 0.9298; sign_size: 7
+2025-02-18 13:19:10	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:19:10	MESSAGE	      Hyperparameter optimisation: SMBO iteration 4: summary score: 0.7786; validation optimisation score: 0.7786; auc_roc: 0.8893; sign_size: 7
+2025-02-18 13:19:10	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:19:10	MESSAGE	      Hyperparameter optimisation: SMBO iteration 5: summary score: 0.7616; validation optimisation score: 0.7616; auc_roc: 0.8808; sign_size: 5
+2025-02-18 13:19:11	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:19:11	MESSAGE	      Hyperparameter optimisation: SMBO iteration 6: summary score: 0.7821; validation optimisation score: 0.7821; auc_roc: 0.8910; sign_size: 5
+2025-02-18 13:19:11	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:19:11	MESSAGE	      Hyperparameter optimisation: SMBO iteration 7: summary score: 0.7823; validation optimisation score: 0.7823; auc_roc: 0.8912; sign_size: 6
+2025-02-18 13:19:11	MESSAGE	      Intensify step 1 using 7 challenger hyperparameter sets.
+2025-02-18 13:19:11	MESSAGE	      Hyperparameter optimisation: SMBO iteration 8: summary score: 0.7679; validation optimisation score: 0.7679; auc_roc: 0.8839; sign_size: 6
+2025-02-18 13:19:11	MESSAGE	    Hyperparameter optimisation: Optimisation stopped early as convergence was achieved.
+2025-02-18 13:19:11	MESSAGE	    Hyperparameter optimisation: A suitable set of hyperparameters was identified: summary score: 0.7679; validation optimisation score: 0.7679; auc_roc: 0.8839; sign_size: 6
+2025-02-18 13:19:12	MESSAGE	
+2025-02-18 13:19:12	MESSAGE	    Starting hyperparameter optimisation for data subsample 8 of 10.
+2025-02-18 13:19:12	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:19:12	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:19:12	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:19:12	MESSAGE	      Computing variable importance for 20 bootstraps.
+2025-02-18 13:19:12	MESSAGE	      Compute initial model performance based on 4 hyperparameter sets.
+2025-02-18 13:19:13	MESSAGE	      Hyperparameter optimisation: Initialisation complete: summary score: 1.0000; validation optimisation score: 1.0000; auc_roc: 1.0000; sign_size: 2
+2025-02-18 13:19:13	MESSAGE	      Intensify step 1 using 9 challenger hyperparameter sets.
+2025-02-18 13:19:13	MESSAGE	      Hyperparameter optimisation: SMBO iteration 1: summary score: 0.9143; validation optimisation score: 0.9143; auc_roc: 0.9571; sign_size: 2
+2025-02-18 13:19:13	MESSAGE	      Intensify step 1 using 9 challenger hyperparameter sets.
+2025-02-18 13:19:13	MESSAGE	      Hyperparameter optimisation: SMBO iteration 2: summary score: 0.9429; validation optimisation score: 0.9429; auc_roc: 0.9714; sign_size: 2
+2025-02-18 13:19:13	MESSAGE	      Intensify step 1 using 9 challenger hyperparameter sets.
+2025-02-18 13:19:13	MESSAGE	      Hyperparameter optimisation: SMBO iteration 3: summary score: 0.9016; validation optimisation score: 0.9016; auc_roc: 0.9508; sign_size: 2
+2025-02-18 13:19:13	MESSAGE	    Hyperparameter optimisation: Optimisation stopped early as convergence was achieved.
+2025-02-18 13:19:13	MESSAGE	    Hyperparameter optimisation: A suitable set of hyperparameters was identified: summary score: 0.9016; validation optimisation score: 0.9016; auc_roc: 0.9508; sign_size: 2
+2025-02-18 13:19:13	MESSAGE	
+2025-02-18 13:19:13	MESSAGE	    Starting hyperparameter optimisation for data subsample 9 of 10.
+2025-02-18 13:19:13	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:19:13	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:19:13	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:19:14	MESSAGE	      Computing variable importance for 20 bootstraps.
+2025-02-18 13:19:14	MESSAGE	      Compute initial model performance based on 4 hyperparameter sets.
+2025-02-18 13:19:14	MESSAGE	      Hyperparameter optimisation: Initialisation complete: summary score: 1.0000; validation optimisation score: 1.0000; auc_roc: 1.0000; sign_size: 5
+2025-02-18 13:19:14	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:19:15	MESSAGE	      Hyperparameter optimisation: SMBO iteration 1: summary score: 1.0000; validation optimisation score: 1.0000; auc_roc: 1.0000; sign_size: 4
+2025-02-18 13:19:15	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:19:15	MESSAGE	      Hyperparameter optimisation: SMBO iteration 2: summary score: 0.7676; validation optimisation score: 0.7676; auc_roc: 0.8838; sign_size: 2
+2025-02-18 13:19:15	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:19:15	MESSAGE	      Hyperparameter optimisation: SMBO iteration 3: summary score: 0.8311; validation optimisation score: 0.8311; auc_roc: 0.9156; sign_size: 4
+2025-02-18 13:19:15	MESSAGE	      Intensify step 1 using 5 challenger hyperparameter sets.
+2025-02-18 13:19:15	MESSAGE	      Hyperparameter optimisation: SMBO iteration 4: summary score: 0.7969; validation optimisation score: 0.7969; auc_roc: 0.8985; sign_size: 4
+2025-02-18 13:19:15	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:19:15	MESSAGE	      Hyperparameter optimisation: SMBO iteration 5: summary score: 0.7309; validation optimisation score: 0.7309; auc_roc: 0.8654; sign_size: 4
+2025-02-18 13:19:16	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:19:16	MESSAGE	      Hyperparameter optimisation: SMBO iteration 6: summary score: 0.6299; validation optimisation score: 0.6299; auc_roc: 0.8150; sign_size: 4
+2025-02-18 13:19:16	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:19:16	MESSAGE	      Hyperparameter optimisation: SMBO iteration 7: summary score: 0.6828; validation optimisation score: 0.6828; auc_roc: 0.8414; sign_size: 4
+2025-02-18 13:19:16	MESSAGE	    Hyperparameter optimisation: Optimisation stopped early as convergence was achieved.
+2025-02-18 13:19:16	MESSAGE	    Hyperparameter optimisation: A suitable set of hyperparameters was identified: summary score: 0.6828; validation optimisation score: 0.6828; auc_roc: 0.8414; sign_size: 4
+2025-02-18 13:19:16	MESSAGE	
+2025-02-18 13:19:16	MESSAGE	    Starting hyperparameter optimisation for data subsample 10 of 10.
+2025-02-18 13:19:16	MESSAGE	      Hyperparameter optimisation is conducted using the auc_roc metric by maximising out-of-bag performance.
+2025-02-18 13:19:16	MESSAGE	      Candidate hyperparameter sets after the initial run are selected after inferring utility using a localised approximate Gaussian Process.
+2025-02-18 13:19:16	MESSAGE	      Utility is measured as expected improvement.
+2025-02-18 13:19:16	MESSAGE	      Computing variable importance for 20 bootstraps.
+2025-02-18 13:19:17	MESSAGE	      Compute initial model performance based on 4 hyperparameter sets.
+2025-02-18 13:19:17	MESSAGE	      Hyperparameter optimisation: Initialisation complete: summary score: 0.5938; validation optimisation score: 0.5938; auc_roc: 0.7969; sign_size: 1
+2025-02-18 13:19:17	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:19:17	MESSAGE	      Hyperparameter optimisation: SMBO iteration 1: summary score: 0.5150; validation optimisation score: 0.5150; auc_roc: 0.7575; sign_size: 5
+2025-02-18 13:19:17	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:19:18	MESSAGE	      Hyperparameter optimisation: SMBO iteration 2: summary score: 0.6100; validation optimisation score: 0.6100; auc_roc: 0.8050; sign_size: 5
+2025-02-18 13:19:18	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:19:18	MESSAGE	      Hyperparameter optimisation: SMBO iteration 3: summary score: 0.5448; validation optimisation score: 0.5448; auc_roc: 0.7724; sign_size: 4
+2025-02-18 13:19:18	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:19:18	MESSAGE	      Hyperparameter optimisation: SMBO iteration 4: summary score: 0.6086; validation optimisation score: 0.6086; auc_roc: 0.8043; sign_size: 4
+2025-02-18 13:19:18	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:19:18	MESSAGE	      Hyperparameter optimisation: SMBO iteration 5: summary score: 0.5494; validation optimisation score: 0.5494; auc_roc: 0.7747; sign_size: 4
+2025-02-18 13:19:18	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:19:19	MESSAGE	      Hyperparameter optimisation: SMBO iteration 6: summary score: 0.6022; validation optimisation score: 0.6022; auc_roc: 0.8011; sign_size: 4
+2025-02-18 13:19:19	MESSAGE	      Intensify step 1 using 6 challenger hyperparameter sets.
+2025-02-18 13:19:19	MESSAGE	      Hyperparameter optimisation: SMBO iteration 7: summary score: 0.6387; validation optimisation score: 0.6387; auc_roc: 0.8193; sign_size: 4
+2025-02-18 13:19:19	MESSAGE	    Hyperparameter optimisation: Optimisation stopped early as convergence was achieved.
+2025-02-18 13:19:19	MESSAGE	    Hyperparameter optimisation: A suitable set of hyperparameters was identified: summary score: 0.6387; validation optimisation score: 0.6387; auc_roc: 0.8193; sign_size: 4
+2025-02-18 13:19:19	MESSAGE	
+2025-02-18 13:19:19	MESSAGE	  Hyperparameter optimisation: Completed parameter optimisation for the lasso learner, based on variable importances from the lasso_binomial variable importance method.
+2025-02-18 13:19:24	MESSAGE	Model building: model building using "lasso" learner, based on "lasso_binomial" feature selection, has been completed.
+2025-02-18 13:19:24	MESSAGE	
+Evaluation: Creating ensemble models from individual models.
+2025-02-18 13:19:24	MESSAGE	
+Evaluation: Processing data to create familiarData objects.
+2025-02-18 13:19:24	MESSAGE	  
+Evaluation: Processing dataset 1 of 2.
+2025-02-18 13:19:25	MESSAGE	    Computing pairwise similarity between features.
+2025-02-18 13:19:25	MESSAGE	      Computing the point estimate of the value(s) of interest for the ensemble model as a whole. Computation is parallelised over bootstraps.
+2025-02-18 13:19:25	MESSAGE	    Computing pairwise similarity between samples.
+2025-02-18 13:19:25	MESSAGE	      Computing the point estimate of the value(s) of interest for the ensemble model as a whole. Computation is parallelised over bootstraps.
+2025-02-18 13:19:25	MESSAGE	    Extracting variable importance obtained during feature selection.
+2025-02-18 13:19:25	MESSAGE	    Extracting variable importance obtained from the models.
+2025-02-18 13:19:25	MESSAGE	      Computing the point estimate of the value(s) of interest for the ensemble model from the 10 underlying models. 
+2025-02-18 13:19:26	MESSAGE	    Computing permutation variable importance for models in the dataset.
+2025-02-18 13:19:26	MESSAGE	      Computing the bias-corrected estimate with confidence interval of the value(s) of interest for the ensemble model from the 10 underlying models. 40 bootstrap samples are obtained for each model (total: 400). Computation is parallelised over models.
+2025-02-18 13:19:47	MESSAGE	    Compute feature expression.
+2025-02-18 13:19:47	MESSAGE	    Extracting univariate analysis information.
+2025-02-18 13:19:47	MESSAGE	    Extracting hyperparameters from the models in the ensemble.
+2025-02-18 13:19:47	MESSAGE	      Computing the point estimate of the value(s) of interest for the ensemble model from the 10 underlying models. 
+2025-02-18 13:19:47	MESSAGE	    Computing ensemble predictions for the dataset.
+2025-02-18 13:19:47	MESSAGE	      Computing the point estimate of the value(s) of interest for the ensemble model as a whole. Computation is parallelised over bootstraps.
+2025-02-18 13:19:48	MESSAGE	    Computing model performance metrics on the dataset.
+2025-02-18 13:19:48	MESSAGE	      Computing the bias-corrected estimate with confidence interval of the value(s) of interest for the ensemble model from the 10 underlying models. 40 bootstrap samples are obtained for each model (total: 400). Computation is parallelised over models.
+2025-02-18 13:19:48	MESSAGE	    Computing data for decision curve analysis.
+2025-02-18 13:19:48	MESSAGE	      Computing the bias-corrected estimate with confidence interval of the value(s) of interest for the ensemble model from the 10 underlying models. 40 bootstrap samples are obtained for each model (total: 400). Computation is parallelised over models.
+2025-02-18 13:19:50	MESSAGE	    Assessing model calibration.
+2025-02-18 13:19:50	MESSAGE	      Computing the bias-corrected estimate with confidence interval of the value(s) of interest for the ensemble model from the 10 underlying models. 40 bootstrap samples are obtained for each model (total: 400). Computation is parallelised over models.
+2025-02-18 13:19:52	MESSAGE	    Computing receiver-operating characteristic curves.
+2025-02-18 13:19:52	MESSAGE	      Computing the bias-corrected estimate with confidence interval of the value(s) of interest for the ensemble model from the 10 underlying models. 40 bootstrap samples are obtained for each model (total: 400). Computation is parallelised over models.
+2025-02-18 13:19:53	MESSAGE	    Computing confusion matrix.
+2025-02-18 13:19:53	MESSAGE	      Computing the point estimate of the value(s) of interest for the ensemble model as a whole. Computation is parallelised over bootstraps.
+2025-02-18 13:19:54	MESSAGE	    Computing individual conditional expectation and partial dependence data for features in the dataset.
+2025-02-18 13:19:54	MESSAGE	      Computing the point estimate of the value(s) of interest for the ensemble model as a whole. Computation is parallelised over bootstraps.
+2025-02-18 13:20:40	MESSAGE	  Evaluation: familiarData object 20250218131834_lasso_lasso_binomial_1_1_pool_1_1_development_data was created.
+2025-02-18 13:20:40	MESSAGE	  
+Evaluation: Processing dataset 2 of 2.
+2025-02-18 13:20:40	MESSAGE	    Computing pairwise similarity between features.
+2025-02-18 13:20:40	MESSAGE	      Computing the point estimate of the value(s) of interest for the ensemble model as a whole. Computation is parallelised over bootstraps.
+2025-02-18 13:20:41	MESSAGE	    Computing pairwise similarity between samples.
+2025-02-18 13:20:41	MESSAGE	      Computing the point estimate of the value(s) of interest for the ensemble model as a whole. Computation is parallelised over bootstraps.
+2025-02-18 13:20:41	MESSAGE	    Extracting variable importance obtained during feature selection.
+2025-02-18 13:20:41	MESSAGE	    Extracting variable importance obtained from the models.
+2025-02-18 13:20:41	MESSAGE	      Computing the point estimate of the value(s) of interest for the ensemble model from the 10 underlying models. 
+2025-02-18 13:20:41	MESSAGE	    Computing permutation variable importance for models in the dataset.
+2025-02-18 13:20:41	MESSAGE	      Computing the bias-corrected estimate with confidence interval of the value(s) of interest for the ensemble model from the 10 underlying models. 40 bootstrap samples are obtained for each model (total: 400). Computation is parallelised over models.
+2025-02-18 13:20:42	MESSAGE	    Compute feature expression.
+2025-02-18 13:20:42	MESSAGE	    Extracting univariate analysis information.
+2025-02-18 13:20:42	MESSAGE	    Extracting hyperparameters from the models in the ensemble.
+2025-02-18 13:20:42	MESSAGE	      Computing the point estimate of the value(s) of interest for the ensemble model from the 10 underlying models. 
+2025-02-18 13:20:42	MESSAGE	    Computing ensemble predictions for the dataset.
+2025-02-18 13:20:42	MESSAGE	      Computing the point estimate of the value(s) of interest for the ensemble model as a whole. Computation is parallelised over bootstraps.
+2025-02-18 13:20:43	MESSAGE	    Computing model performance metrics on the dataset.
+2025-02-18 13:20:43	MESSAGE	      Computing the bias-corrected estimate with confidence interval of the value(s) of interest for the ensemble model from the 10 underlying models. 40 bootstrap samples are obtained for each model (total: 400). Computation is parallelised over models.
+2025-02-18 13:20:43	MESSAGE	    Computing data for decision curve analysis.
+2025-02-18 13:20:43	MESSAGE	      Computing the bias-corrected estimate with confidence interval of the value(s) of interest for the ensemble model from the 10 underlying models. 40 bootstrap samples are obtained for each model (total: 400). Computation is parallelised over models.
+2025-02-18 13:20:44	MESSAGE	    Assessing model calibration.
+2025-02-18 13:20:44	MESSAGE	      Computing the bias-corrected estimate with confidence interval of the value(s) of interest for the ensemble model from the 10 underlying models. 40 bootstrap samples are obtained for each model (total: 400). Computation is parallelised over models.
+2025-02-18 13:20:46	MESSAGE	    Computing receiver-operating characteristic curves.
+2025-02-18 13:20:46	MESSAGE	      Computing the bias-corrected estimate with confidence interval of the value(s) of interest for the ensemble model from the 10 underlying models. 40 bootstrap samples are obtained for each model (total: 400). Computation is parallelised over models.
+2025-02-18 13:20:47	MESSAGE	    Computing confusion matrix.
+2025-02-18 13:20:47	MESSAGE	      Computing the point estimate of the value(s) of interest for the ensemble model as a whole. Computation is parallelised over bootstraps.
+2025-02-18 13:20:48	MESSAGE	    Computing individual conditional expectation and partial dependence data for features in the dataset.
+2025-02-18 13:20:48	MESSAGE	      Computing the point estimate of the value(s) of interest for the ensemble model as a whole. Computation is parallelised over bootstraps.
+2025-02-18 13:21:33	MESSAGE	  Evaluation: familiarData object 20250218131834_lasso_lasso_binomial_1_1_pool_1_1_validation_data was created.
+2025-02-18 13:21:33	MESSAGE	
+Evaluation: Creating collection pooled_data
+2025-02-18 13:21:34	MESSAGE	
+Evaluation: Exporting data from collection pooled_data

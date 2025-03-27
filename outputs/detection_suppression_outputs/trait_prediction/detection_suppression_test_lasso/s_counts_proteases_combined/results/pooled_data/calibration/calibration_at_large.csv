@@ -1,0 +1,5 @@
+data_set;fs_method;learner;ensemble_model_name;positive_class;type;value;ci_low;ci_up;p_value
+development;lasso_binomial;lasso;ensemble.1.1;1;offset;-0.0743428350597672;-3.34238491393096;0.170517091857275;0.163454351142605
+development;lasso_binomial;lasso;ensemble.1.1;1;slope;1.19720189201069;0.701212153130427;11.9145628092502;0.0776936170635824
+validation;lasso_binomial;lasso;ensemble.1.1;1;offset;-0.053836534131837;-14.2726982911194;1.00789575204968;2.22906889587266e-15
+validation;lasso_binomial;lasso;ensemble.1.1;1;slope;1.04380945796587;-0.819055743538262;47.3209718371126;2.23066822357484e-15
