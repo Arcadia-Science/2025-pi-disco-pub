@@ -15,8 +15,9 @@
 
 # Specify the input and output directories
 # Usually, we place the output directory inside the input directory
-input_dir: "/Users/adairborges/Documents/venoms/protease_inhibitors/PI-disco/tick_PUFs_PIs_1200_plus_toxinDB_carto/structures/"
-output_dir: "/Users/adairborges/Documents/venoms/protease_inhibitors/PI-disco/tick_PUFs_PIs_1200_plus_toxinDB_carto/carto_output_run3"
+# You may need to adjust these paths based on your own local file structure 
+input_dir: "2025-pi-disco-pub/carto_run/structures/"
+output_dir: "2025-pi-disco-pub/carto_run/carto_output_run3"
 
 # Provide a name for the analysis, which is set as a prefix for key output files
 analysis_name: "carto_run3"
@@ -34,7 +35,7 @@ override_file: "features_override.tsv"
 # A features file (usually retrieved from Uniprot) that contains
 # protein metadata for visualization. Uses the same columns as the
 # override_file.
-features_file: "/Users/adairborges/Documents/venoms/protease_inhibitors/PI-disco/datasheets/tick_PUFs_PIs_1200_plus_toxinDB_metadata.tsv"
+features_file: "2025-pi-disco-pub/datasheets/tick_PUFs_PIs_1200_plus_toxinDB_metadata.tsv"
 
 #####################
 # Plotting settings #
