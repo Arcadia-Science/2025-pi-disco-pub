@@ -28,9 +28,9 @@ import sys
 """
 Usage:
 mamba env create --file env.yml
-mamba activate pi-disco
+mamba activate 2025-pi-disco-pub
 
-python 03_run_esmfold/enqueue.py --fasta-file s3://arcadia-pi-disco/tick_PUFs_PIs_1200.fasta --job-name "09/12 PI discovery" --output-directory s3://arcadia-pi-disco/pdb-files
+python scripts/enqueue.py --fasta-file s3://arcadia-pi-disco/tick_PUFs_PIs_1200.fasta --job-name "09/12 PI discovery" --output-directory s3://arcadia-pi-disco/pdb-files
 """
 
 rate_limiter = RateLimiter(max_calls=100, period=1)  # 100 calls per second
