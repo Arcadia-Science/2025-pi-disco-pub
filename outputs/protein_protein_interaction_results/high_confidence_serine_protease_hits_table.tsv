@@ -1,0 +1,80 @@
+Amblyomma_protein	Entry	confidence_score	Protein names	Length
+Amblyomma-americanum_evm.model.contig-114817-1.1	P12644	0.966344118118286	Bone morphogenetic protein 4 (BMP-4) (Bone morphogenetic protein 2B) (BMP-2B)	408
+Amblyomma-americanum_evm.model.contig-114817-1.1	Q12933	0.880747675895691	TNF receptor-associated factor 2 (EC 2.3.2.27) (E3 ubiquitin-protein ligase TRAF2) (RING-type E3 ubiquitin transferase TRAF2) (Tumor necrosis factor type 2 receptor-associated protein 3)	501
+Amblyomma-americanum_evm.model.contig-114817-1.1	Q13114	0.92570036649704	TNF receptor-associated factor 3 (EC 2.3.2.27) (CD40 receptor-associated factor 1) (CRAF1) (CD40-binding protein) (CD40BP) (LMP1-associated protein 1) (LAP1) (RING-type E3 ubiquitin transferase TRAF3)	568
+Amblyomma-americanum_evm.model.contig-114817-1.1	Q96KP4	0.859413504600525	Cytosolic non-specific dipeptidase (EC 3.4.13.18) (CNDP dipeptidase 2) (Glutamate carboxypeptidase-like protein 1) (Peptidase A) (Threonyl dipeptidase)	475
+Amblyomma-americanum_evm.model.contig-114817-1.1	Q9UQ80	0.859030842781067	Proliferation-associated protein 2G4 (Cell cycle protein p38-2G4 homolog) (hG4-1) (ErbB3-binding protein 1)	394
+Amblyomma-americanum_evm.model.contig-114817-1.1	A0A994J7K0	0.860132932662964	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	804
+Amblyomma-americanum_evm.model.contig-114817-1.1	E9PDL2	0.860073804855347	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	758
+Amblyomma-americanum_evm.model.contig-114817-1.1	E9PF59	0.860122263431549	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	801
+Amblyomma-americanum_evm.model.contig-114817-1.1	M0R1F0	0.858062446117401	Kallikrein related peptidase 3	262
+Amblyomma-americanum_evm.model.contig-128153-1.1	P08254	0.85908567905426	Stromelysin-1 (SL-1) (EC 3.4.24.17) (Matrix metalloproteinase-3) (MMP-3) (Transin-1)	477
+Amblyomma-americanum_evm.model.contig-128153-1.1	P09238	0.859076082706451	Stromelysin-2 (SL-2) (EC 3.4.24.22) (Matrix metalloproteinase-10) (MMP-10) (Transin-2)	476
+Amblyomma-americanum_evm.model.contig-128153-1.1	P12644	0.910698533058166	Bone morphogenetic protein 4 (BMP-4) (Bone morphogenetic protein 2B) (BMP-2B)	408
+Amblyomma-americanum_evm.model.contig-128153-1.1	Q12933	0.983513414859772	TNF receptor-associated factor 2 (EC 2.3.2.27) (E3 ubiquitin-protein ligase TRAF2) (RING-type E3 ubiquitin transferase TRAF2) (Tumor necrosis factor type 2 receptor-associated protein 3)	501
+Amblyomma-americanum_evm.model.contig-128153-1.1	Q13114	0.923726081848144	TNF receptor-associated factor 3 (EC 2.3.2.27) (CD40 receptor-associated factor 1) (CRAF1) (CD40-binding protein) (CD40BP) (LMP1-associated protein 1) (LAP1) (RING-type E3 ubiquitin transferase TRAF3)	568
+Amblyomma-americanum_evm.model.contig-128153-1.1	Q96KP4	0.8089679479599	Cytosolic non-specific dipeptidase (EC 3.4.13.18) (CNDP dipeptidase 2) (Glutamate carboxypeptidase-like protein 1) (Peptidase A) (Threonyl dipeptidase)	475
+Amblyomma-americanum_evm.model.contig-128153-1.1	Q9UQ80	0.858192443847656	Proliferation-associated protein 2G4 (Cell cycle protein p38-2G4 homolog) (hG4-1) (ErbB3-binding protein 1)	394
+Amblyomma-americanum_evm.model.contig-128153-1.1	A0A7P0TA52	0.853670120239258	Angiotensinogen (Serpin A8)	420
+Amblyomma-americanum_evm.model.contig-128153-1.1	A0A994J7K0	0.859914004802704	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	804
+Amblyomma-americanum_evm.model.contig-128153-1.1	E9PDL2	0.859871208667755	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	758
+Amblyomma-americanum_evm.model.contig-128153-1.1	E9PF59	0.85991233587265	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	801
+Amblyomma-americanum_evm.model.contig-195898-1.1	P08254	0.861203193664551	Stromelysin-1 (SL-1) (EC 3.4.24.17) (Matrix metalloproteinase-3) (MMP-3) (Transin-1)	477
+Amblyomma-americanum_evm.model.contig-195898-1.1	P09238	0.912992596626282	Stromelysin-2 (SL-2) (EC 3.4.24.22) (Matrix metalloproteinase-10) (MMP-10) (Transin-2)	476
+Amblyomma-americanum_evm.model.contig-195898-1.1	P12644	0.975766718387604	Bone morphogenetic protein 4 (BMP-4) (Bone morphogenetic protein 2B) (BMP-2B)	408
+Amblyomma-americanum_evm.model.contig-195898-1.1	Q12933	0.92592865228653	TNF receptor-associated factor 2 (EC 2.3.2.27) (E3 ubiquitin-protein ligase TRAF2) (RING-type E3 ubiquitin transferase TRAF2) (Tumor necrosis factor type 2 receptor-associated protein 3)	501
+Amblyomma-americanum_evm.model.contig-195898-1.1	Q13114	0.93220716714859	TNF receptor-associated factor 3 (EC 2.3.2.27) (CD40 receptor-associated factor 1) (CRAF1) (CD40-binding protein) (CD40BP) (LMP1-associated protein 1) (LAP1) (RING-type E3 ubiquitin transferase TRAF3)	568
+Amblyomma-americanum_evm.model.contig-195898-1.1	A0A7P0TA52	0.962830662727356	Angiotensinogen (Serpin A8)	420
+Amblyomma-americanum_evm.model.contig-234199-1.1	P08254	0.931414723396301	Stromelysin-1 (SL-1) (EC 3.4.24.17) (Matrix metalloproteinase-3) (MMP-3) (Transin-1)	477
+Amblyomma-americanum_evm.model.contig-234199-1.1	P09238	0.858136594295502	Stromelysin-2 (SL-2) (EC 3.4.24.22) (Matrix metalloproteinase-10) (MMP-10) (Transin-2)	476
+Amblyomma-americanum_evm.model.contig-234199-1.1	P12644	0.931901752948761	Bone morphogenetic protein 4 (BMP-4) (Bone morphogenetic protein 2B) (BMP-2B)	408
+Amblyomma-americanum_evm.model.contig-234199-1.1	Q12933	0.987355291843414	TNF receptor-associated factor 2 (EC 2.3.2.27) (E3 ubiquitin-protein ligase TRAF2) (RING-type E3 ubiquitin transferase TRAF2) (Tumor necrosis factor type 2 receptor-associated protein 3)	501
+Amblyomma-americanum_evm.model.contig-234199-1.1	Q13114	0.979966580867767	TNF receptor-associated factor 3 (EC 2.3.2.27) (CD40 receptor-associated factor 1) (CRAF1) (CD40-binding protein) (CD40BP) (LMP1-associated protein 1) (LAP1) (RING-type E3 ubiquitin transferase TRAF3)	568
+Amblyomma-americanum_evm.model.contig-234199-1.1	Q96KP4	0.856700897216797	Cytosolic non-specific dipeptidase (EC 3.4.13.18) (CNDP dipeptidase 2) (Glutamate carboxypeptidase-like protein 1) (Peptidase A) (Threonyl dipeptidase)	475
+Amblyomma-americanum_evm.model.contig-234199-1.1	Q9UQ80	0.85748678445816	Proliferation-associated protein 2G4 (Cell cycle protein p38-2G4 homolog) (hG4-1) (ErbB3-binding protein 1)	394
+Amblyomma-americanum_evm.model.contig-234199-1.1	A0A994J7K0	0.859385132789612	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	804
+Amblyomma-americanum_evm.model.contig-234199-1.1	E9PDL2	0.859281003475189	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	758
+Amblyomma-americanum_evm.model.contig-234199-1.1	E9PF59	0.859365701675415	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	801
+Amblyomma-americanum_evm.model.contig-234199-1.1	M0R1F0	0.852286100387573	Kallikrein related peptidase 3	262
+Amblyomma-americanum_evm.model.contig-240510-1.2	P12644	0.930598318576813	Bone morphogenetic protein 4 (BMP-4) (Bone morphogenetic protein 2B) (BMP-2B)	408
+Amblyomma-americanum_evm.model.contig-240510-1.2	Q13114	0.890507161617279	TNF receptor-associated factor 3 (EC 2.3.2.27) (CD40 receptor-associated factor 1) (CRAF1) (CD40-binding protein) (CD40BP) (LMP1-associated protein 1) (LAP1) (RING-type E3 ubiquitin transferase TRAF3)	568
+Amblyomma-americanum_evm.model.contig-240510-1.2	Q96KP4	0.85921049118042	Cytosolic non-specific dipeptidase (EC 3.4.13.18) (CNDP dipeptidase 2) (Glutamate carboxypeptidase-like protein 1) (Peptidase A) (Threonyl dipeptidase)	475
+Amblyomma-americanum_evm.model.contig-240510-1.2	Q9UQ80	0.858778476715088	Proliferation-associated protein 2G4 (Cell cycle protein p38-2G4 homolog) (hG4-1) (ErbB3-binding protein 1)	394
+Amblyomma-americanum_evm.model.contig-240510-1.2	A0A7P0TA52	0.858951508998871	Angiotensinogen (Serpin A8)	420
+Amblyomma-americanum_evm.model.contig-240510-1.2	A0A994J7K0	0.860013902187347	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	804
+Amblyomma-americanum_evm.model.contig-240510-1.2	E9PDL2	0.859946608543396	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	758
+Amblyomma-americanum_evm.model.contig-240510-1.2	E9PF59	0.860001444816589	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	801
+Amblyomma-americanum_evm.model.contig-240510-1.2	M0R1F0	0.857702314853668	Kallikrein related peptidase 3	262
+Amblyomma-americanum_evm.model.contig-30987-1.8	P12644	0.886538684368134	Bone morphogenetic protein 4 (BMP-4) (Bone morphogenetic protein 2B) (BMP-2B)	408
+Amblyomma-americanum_evm.model.contig-30987-1.8	Q12933	0.876681566238403	TNF receptor-associated factor 2 (EC 2.3.2.27) (E3 ubiquitin-protein ligase TRAF2) (RING-type E3 ubiquitin transferase TRAF2) (Tumor necrosis factor type 2 receptor-associated protein 3)	501
+Amblyomma-americanum_evm.model.contig-30987-1.8	A0A7P0TA52	0.882638156414032	Angiotensinogen (Serpin A8)	420
+Amblyomma-americanum_evm.model.contig-48378-1.17	P08254	0.859780311584473	Stromelysin-1 (SL-1) (EC 3.4.24.17) (Matrix metalloproteinase-3) (MMP-3) (Transin-1)	477
+Amblyomma-americanum_evm.model.contig-48378-1.17	P09238	0.859767854213715	Stromelysin-2 (SL-2) (EC 3.4.24.22) (Matrix metalloproteinase-10) (MMP-10) (Transin-2)	476
+Amblyomma-americanum_evm.model.contig-48378-1.17	P12644	0.955710470676422	Bone morphogenetic protein 4 (BMP-4) (Bone morphogenetic protein 2B) (BMP-2B)	408
+Amblyomma-americanum_evm.model.contig-48378-1.17	Q13114	0.905513882637024	TNF receptor-associated factor 3 (EC 2.3.2.27) (CD40 receptor-associated factor 1) (CRAF1) (CD40-binding protein) (CD40BP) (LMP1-associated protein 1) (LAP1) (RING-type E3 ubiquitin transferase TRAF3)	568
+Amblyomma-americanum_evm.model.contig-76089-1.2	P08254	0.858347058296204	Stromelysin-1 (SL-1) (EC 3.4.24.17) (Matrix metalloproteinase-3) (MMP-3) (Transin-1)	477
+Amblyomma-americanum_evm.model.contig-76089-1.2	P09238	0.85802811384201	Stromelysin-2 (SL-2) (EC 3.4.24.22) (Matrix metalloproteinase-10) (MMP-10) (Transin-2)	476
+Amblyomma-americanum_evm.model.contig-76089-1.2	P12644	0.957398176193237	Bone morphogenetic protein 4 (BMP-4) (Bone morphogenetic protein 2B) (BMP-2B)	408
+Amblyomma-americanum_evm.model.contig-76089-1.2	Q12933	0.811600923538208	TNF receptor-associated factor 2 (EC 2.3.2.27) (E3 ubiquitin-protein ligase TRAF2) (RING-type E3 ubiquitin transferase TRAF2) (Tumor necrosis factor type 2 receptor-associated protein 3)	501
+Amblyomma-americanum_evm.model.contig-76089-1.2	Q13114	0.945805788040161	TNF receptor-associated factor 3 (EC 2.3.2.27) (CD40 receptor-associated factor 1) (CRAF1) (CD40-binding protein) (CD40BP) (LMP1-associated protein 1) (LAP1) (RING-type E3 ubiquitin transferase TRAF3)	568
+Amblyomma-americanum_evm.model.contig-76089-1.2	Q96KP4	0.858362555503845	Cytosolic non-specific dipeptidase (EC 3.4.13.18) (CNDP dipeptidase 2) (Glutamate carboxypeptidase-like protein 1) (Peptidase A) (Threonyl dipeptidase)	475
+Amblyomma-americanum_evm.model.contig-76089-1.2	Q9UQ80	0.857769131660461	Proliferation-associated protein 2G4 (Cell cycle protein p38-2G4 homolog) (hG4-1) (ErbB3-binding protein 1)	394
+Amblyomma-americanum_evm.model.contig-76089-1.2	A0A7P0TA52	0.843677878379822	Angiotensinogen (Serpin A8)	420
+Amblyomma-americanum_evm.model.contig-76089-1.2	A0A994J7K0	0.859534859657288	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	804
+Amblyomma-americanum_evm.model.contig-76089-1.2	E9PDL2	0.859442055225372	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	758
+Amblyomma-americanum_evm.model.contig-76089-1.2	E9PF59	0.859517872333527	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	801
+Amblyomma-americanum_evm.model.contig-76089-1.2	M0R1F0	0.850044667720795	Kallikrein related peptidase 3	262
+Amblyomma-americanum_evm.model.contig-8661-1.1	P08254	0.960155963897705	Stromelysin-1 (SL-1) (EC 3.4.24.17) (Matrix metalloproteinase-3) (MMP-3) (Transin-1)	477
+Amblyomma-americanum_evm.model.contig-8661-1.1	P12644	0.825548410415649	Bone morphogenetic protein 4 (BMP-4) (Bone morphogenetic protein 2B) (BMP-2B)	408
+Amblyomma-americanum_evm.model.contig-8661-1.1	Q96KP4	0.85813570022583	Cytosolic non-specific dipeptidase (EC 3.4.13.18) (CNDP dipeptidase 2) (Glutamate carboxypeptidase-like protein 1) (Peptidase A) (Threonyl dipeptidase)	475
+Amblyomma-americanum_evm.model.contig-8661-1.1	Q9UQ80	0.857442080974579	Proliferation-associated protein 2G4 (Cell cycle protein p38-2G4 homolog) (hG4-1) (ErbB3-binding protein 1)	394
+Amblyomma-americanum_evm.model.contig-8661-1.1	A0A994J7K0	0.859374046325684	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	804
+Amblyomma-americanum_evm.model.contig-8661-1.1	E9PDL2	0.859280288219452	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	758
+Amblyomma-americanum_evm.model.contig-8661-1.1	E9PF59	0.859358549118042	Dipeptidyl aminopeptidase-like protein 6 (Dipeptidyl peptidase 6) (Dipeptidyl peptidase VI)	801
+Amblyomma-americanum_evm.model.contig-8661-1.1	M0R1F0	0.855797171592712	Kallikrein related peptidase 3	262
+Amblyomma-americanum_evm.model.contig-94090-1.4	P08254	0.962896406650543	Stromelysin-1 (SL-1) (EC 3.4.24.17) (Matrix metalloproteinase-3) (MMP-3) (Transin-1)	477
+Amblyomma-americanum_evm.model.contig-94090-1.4	P09238	0.962892949581146	Stromelysin-2 (SL-2) (EC 3.4.24.22) (Matrix metalloproteinase-10) (MMP-10) (Transin-2)	476
+Amblyomma-americanum_evm.model.contig-94090-1.4	P12644	0.958004355430603	Bone morphogenetic protein 4 (BMP-4) (Bone morphogenetic protein 2B) (BMP-2B)	408
+Amblyomma-americanum_evm.model.contig-94090-1.4	Q13114	0.912963271141052	TNF receptor-associated factor 3 (EC 2.3.2.27) (CD40 receptor-associated factor 1) (CRAF1) (CD40-binding protein) (CD40BP) (LMP1-associated protein 1) (LAP1) (RING-type E3 ubiquitin transferase TRAF3)	568
+Amblyomma-americanum_evm.model.contig-94090-1.4	Q96KP4	0.859717607498169	Cytosolic non-specific dipeptidase (EC 3.4.13.18) (CNDP dipeptidase 2) (Glutamate carboxypeptidase-like protein 1) (Peptidase A) (Threonyl dipeptidase)	475
+Amblyomma-americanum_evm.model.contig-94090-1.4	M0R1F0	0.858603537082672	Kallikrein related peptidase 3	262
