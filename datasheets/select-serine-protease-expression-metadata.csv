@@ -1,0 +1,35 @@
+﻿uniprot_id,uniprot_name,annotation,ncbi_human_gene_link,primary_expression,full_expression
+P08217,CEL2A_HUMAN,Chymotrypsin-like elastase family member 2A (EC 3.4.21.71) (Elastase-2A),https://www.ncbi.nlm.nih.gov/gene/63036,other,pancreas
+Q6GPI1,CTRB2_HUMAN,Chymotrypsinogen B2 (EC 3.4.21.1) [Cleaved into: Chymotrypsin B2 chain A; Chymotrypsin B2 chain B; Chymotrypsin B2 chain C],https://www.ncbi.nlm.nih.gov/gene/?term=Homo+sapiens+chymotrypsinogen+B2,other,pancreas
+Q99895,CTRC_HUMAN,Chymotrypsin-C (EC 3.4.21.2) (Caldecrin),https://www.ncbi.nlm.nih.gov/gene/11330,other,pancreas
+P08218,CEL2B_HUMAN,Chymotrypsin-like elastase family member 2B (EC 3.4.21.71) (Elastase-2B),https://www.ncbi.nlm.nih.gov/gene/51032,other,pancreas
+P17538,CTRB1_HUMAN,Chymotrypsinogen B (EC 3.4.21.1) [Cleaved into: Chymotrypsin B chain A; Chymotrypsin B chain B; Chymotrypsin B chain C],https://www.ncbi.nlm.nih.gov/gene/1504,other,pancreas
+P40313,CTRL_HUMAN,Chymotrypsin-like protease CTRL-1 (EC 3.4.21.-),https://www.ncbi.nlm.nih.gov/gene/1506,other,pancreas
+P20718,GRAH_HUMAN,Granzyme H (EC 3.4.21.-) (CCP-X) (Cathepsin G-like 2) (CTSGL2) (Cytotoxic T-lymphocyte proteinase) (Cytotoxic serine protease C) (CSP-C),https://www.ncbi.nlm.nih.gov/gene/2999,immune cells,"lymph nodes, bone marrow, spleen, lung"
+Q9UKQ9,KLK9_HUMAN,Kallikrein-9 (EC 3.4.21.-) (Kallikrein-like protein 3) (KLK-L3),https://www.ncbi.nlm.nih.gov/gene/284366,skin,"skin, esophagus"
+P23946,CMA1_HUMAN,Chymase (EC 3.4.21.39) (Alpha-chymase) (Mast cell protease I),https://www.ncbi.nlm.nih.gov/gene/1215,immune cells,"colon, esophagus, gall bladder, small intenstine"
+P08311,CATG_HUMAN,Cathepsin G (CG) (EC 3.4.21.20) [Cleaved into: Cathepsin G  C-terminal truncated form],https://www.ncbi.nlm.nih.gov/gene/1511,immune cells,bone marrow
+Q92876,KLK6_HUMAN,Kallikrein-6 (EC 3.4.21.-) (Neurosin) (Protease M) (SP59) (Serine protease 18) (Serine protease 9) (Zyme),https://www.ncbi.nlm.nih.gov/gene/5653,other,"esophagus, brain, kidney"
+P00746,CFAD_HUMAN,Complement factor D (EC 3.4.21.46) (Adipsin) (C3 convertase activator) (Properdin factor D),https://www.ncbi.nlm.nih.gov/gene/1675,other,"colon, fat, prostate"
+Q9UKR0,KLK12_HUMAN,Kallikrein-12 (EC 3.4.21.-) (Kallikrein-like protein 5) (KLK-L5),https://www.ncbi.nlm.nih.gov/gene/43849,other,"esophagus, colon, salivary gland"
+P10144,GRAB_HUMAN,Granzyme B (EC 3.4.21.79) (C11) (CTLA-1) (Cathepsin G-like 1) (CTSGL1) (Cytotoxic T-lymphocyte proteinase 2) (Lymphocyte protease) (Fragmentin-2) (Granzyme-2) (Human lymphocyte protein) (HLP) (SECT) (T-cell serine protease 1-3E),https://www.ncbi.nlm.nih.gov/gene/3002,immune cells,"bone marrow, appendix, lung, lymph node, spleen"
+Q9Y5K2,KLK4_HUMAN,Kallikrein-4 (EC 3.4.21.-) (Enamel matrix serine proteinase 1) (Kallikrein-like protein 1) (KLK-L1) (Prostase) (Serine protease 17),https://www.ncbi.nlm.nih.gov/gene/9622,other,prostate
+Q9UNI1,CELA1_HUMAN,Chymotrypsin-like elastase family member 1 (EC 3.4.21.36) (Elastase-1) (Pancreatic elastase 1),https://www.ncbi.nlm.nih.gov/gene/1990,other,"pancreas, adrenal"
+P06870,KLK1_HUMAN,Kallikrein-1 (EC 3.4.21.35) (Kidney/pancreas/salivary gland kallikrein) (Tissue kallikrein),https://www.ncbi.nlm.nih.gov/gene/3816,other,"salivary gland, pancreas"
+Q9H2R5,KLK15_HUMAN,Kallikrein-15 (EC 3.4.21.-) (ACO protease),https://www.ncbi.nlm.nih.gov/gene/55554,other,"colon, salivary gland, testis"
+P51124,GRAM_HUMAN,Granzyme M (EC 3.4.21.-) (Met-1 serine protease) (Hu-Met-1) (Met-ase) (Natural killer cell granular protease),https://www.ncbi.nlm.nih.gov/gene/3004,immune cells,"spleen, lymph node, bone marrow, appendix"
+P20151,KLK2_HUMAN,Kallikrein-2 (EC 3.4.21.35) (Glandular kallikrein-1) (hGK-1) (Tissue kallikrein-2),https://www.ncbi.nlm.nih.gov/gene/3817,other,prostate
+P08861,CEL3B_HUMAN,Chymotrypsin-like elastase family member 3B (EC 3.4.21.70) (Elastase IIIB) (Elastase-3B) (Protease E),https://www.ncbi.nlm.nih.gov/gene/23436,other,pancreas
+P09093,CEL3A_HUMAN,Chymotrypsin-like elastase family member 3A (EC 3.4.21.70) (Elastase IIIA) (Elastase-3A) (Protease E),https://www.ncbi.nlm.nih.gov/gene/10136,other,pancreas
+P07478,TRY2_HUMAN,Trypsin-2 (EC 3.4.21.4) (Anionic trypsinogen) (Serine protease 2) (Trypsin II),https://www.ncbi.nlm.nih.gov/gene/5645,other,pancreas
+Q8NF86,PRS33_HUMAN,Serine protease 33 (EC 3.4.21.-) (Serine protease EOS),https://www.ncbi.nlm.nih.gov/gene/260429,immune cells,none
+P08246,ELNE_HUMAN,Neutrophil elastase (EC 3.4.21.37) (Bone marrow serine protease) (Elastase-2) (Human leukocyte elastase) (HLE) (Medullasin) (PMN elastase),none,immune cells,none
+P49862,KLK7_HUMAN,Kallikrein-7 (hK7) (EC 3.4.21.117) (Serine protease 6) (Stratum corneum chymotryptic enzyme) (hSCCE),https://www.ncbi.nlm.nih.gov/gene/5650,skin,"skin, esophagus"
+P07477,TRY1_HUMAN,Serine protease 1 (EC 3.4.21.4) (Anionic trypsin I) (Anionic trypsin-I) (Beta-trypsin) (Cationic trypsinogen) (Pretrypsinogen I) (Trypsin I) (Trypsin-1) [Cleaved into: Alpha-trypsin chain 1; Alpha-trypsin chain 2],https://www.ncbi.nlm.nih.gov/gene/5644,other,pancreas
+Q9P0G3,KLK14_HUMAN,Kallikrein-14 (hK14) (EC 3.4.21.-) (Kallikrein-like protein 6) (KLK-L6),https://www.ncbi.nlm.nih.gov/gene/43847,skin,skin
+Q8NHM4,TRY6_HUMAN,Putative trypsin-6 (EC 3.4.21.4) (Serine protease 3 pseudogene 2) (Trypsinogen C),https://www.ncbi.nlm.nih.gov/gene/?term=Homo+sapiens+Putative+trypsin-6,none,none
+O60259,KLK8_HUMAN,Kallikrein-8 (hK8) (EC 3.4.21.118) (Neuropsin) (NP) (Ovasin) (Serine protease 19) (Serine protease TADG-14) (Tumor-associated differentially expressed gene 14 protein),https://www.ncbi.nlm.nih.gov/gene/11202,skin,"skin, esophagus"
+P24158,PRTN3_HUMAN,Myeloblastin (EC 3.4.21.76) (AGP7) (C-ANCA antigen) (Leukocyte proteinase 3) (PR-3) (PR3) (Neutrophil proteinase 4) (NP-4) (P29) (Wegener autoantigen),https://www.ncbi.nlm.nih.gov/gene/5657,immune cells,bone marrow*
+Q15661,TRYB1_HUMAN,Tryptase alpha/beta-1 (Tryptase-1) (EC 3.4.21.59) (Tryptase I) (Tryptase alpha-1),https://www.ncbi.nlm.nih.gov/gene/?term=Homo+sapiens+tryptase+alpha%2Fbeta-1,immune cells,"gall bladder, colon, lung, stomach"
+P20160,CAP7_HUMAN,Azurocidin (Cationic antimicrobial protein CAP37) (Heparin-binding protein) (HBP) (hHBP),https://www.ncbi.nlm.nih.gov/gene/566,immune cells,bone marrow
+A1L453,PRS38_HUMAN,Serine protease 38 (EC 3.4.21.-) (Marapsin-2),https://www.ncbi.nlm.nih.gov/gene/339501,other,testis
