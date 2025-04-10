@@ -6,7 +6,7 @@ output: html_notebook
 
 ```{r}
 ##### Set the working directory to the cloned github repo directory. You may need to modify the path to reflect your setup.
-setwd("~/pi-disco-pub/")
+setwd("~/2025-pi-disco-pub/")
 # Load the required libraries and functions
 source("./scripts/trait_mapping_functions.R")
 library(tidyverse)
@@ -34,7 +34,7 @@ We aimed to determine which protease inhibitor gene families have evolutionary h
 
 ```{r}
 # Define variables indicating where noveltree run outputs are stored
-# The noveltree workflow output directory chelicerata-v1-10062023 is assumed to be in the current
+# The noveltree workflow output directory chelicerata-v1 -10062023 (see https://zenodo.org/records/14113178) is assumed to be in the current
 # working directory. Speciesrax and generax folders are within this result folder.
 result_directory <- "./chelicerata-v1-10062023/"
 speciesrax_dir <- "speciesrax/species_trees/"

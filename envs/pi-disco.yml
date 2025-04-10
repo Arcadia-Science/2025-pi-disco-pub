@@ -1,4 +1,4 @@
-name: 2025-pi-disco-pub
+name: pi-disco
 channels:
   - conda-forge
   - bioconda
