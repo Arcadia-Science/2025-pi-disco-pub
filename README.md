@@ -5,17 +5,38 @@
 
 ## Purpose
 
-TODO: Briefly describe the core analyses performed in the repository and the motivation behind them.
+This repo accompanies the pub ["Case study: Using AlphaFold-Multimer to predict the targets of tick protease inhibitors"](https://doi.org/10.57844/arcadia-77d4-1c5d). We are interested in developing approaches to predict the targets of tick secreted effector proteins, with the goal of learning new strategies for modulating itch, pain, and inflammation in the skin. In this work, we try out using AlphaFold Multimer to predict targets for 10 representatives of a family of tick TIL-domain protease inhibitors (orthogroup OG0000058). 
+
+This pilot had three main steps:
+1. **Protease inhibitor discovery**: Identify protease inhibitor gene families across 15 species of ticks
+2. **Phylogenomic profiling**: Identify which gene family is most predictive of the ability of ticks to suppress host-detection mechanisms such as itch, pain, and inflammation
+3. **Protein-protein interaction prediction**: Predict targets for protease inhibitor family orthogroup OG0000058
 
 ## Installation and Setup
 
-This repository uses conda to manage software environments and installations. You can find operating system-specific instructions for installing miniconda [here](https://docs.conda.io/projects/miniconda/en/latest/). After installing conda and [mamba](https://mamba.readthedocs.io/en/latest/), run the following command to create the pipeline run environment.
+This repository uses conda to manage software environments and installations. You can find operating system-specific instructions for installing miniconda [here](https://docs.conda.io/projects/miniconda/en/latest/). After installing conda and [mamba](https://mamba.readthedocs.io/en/latest/), run the following commands to create the pipeline run environments.
+
+To create the enviroment used for protease inhibitor discovery (Notebooks 01-03):
 
 ```{bash}
-TODO: Replace <NAME> with the name of your environment
-mamba env create -n <NAME> --file envs/dev.yml
-conda activate <NAME>
+mamba env create -n pi-disco --file envs/pi-disco.yml
+conda activate pi-disco
 ```
+To create the enviroment used for protein-protein interaction prediction (Notebooks 05-08):
+
+```{bash}
+mamba env create -n tick_ppi --file envs/ppi.yml
+conda activate tick_ppi
+```
+
+This repository contains R scripts. These can either be run directly in the terminal as R scripts or in the terminal R environment, or can be run in RStudio. If you choose to run these scripts in Rstudio, you can install it by following the instructions [here](https://posit.co/download/rstudio-desktop/). Once RStudio is installed, run the following from command line to open Rstudio from your activated conda environment:
+
+```{bash}
+open -a Rstudio
+```
+
+You can now move on to running the necessary scripts as described below. Make sure your working directory is set to this repo when in Rstudio. You can check your working directory with the getwd() command and change it with the ```setwd()``` command in R.
+
 
 ## Data
 
