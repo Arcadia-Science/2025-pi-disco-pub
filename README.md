@@ -8,39 +8,52 @@
 This repo accompanies the pub ["Case study: Using AlphaFold-Multimer to predict the targets of tick protease inhibitors"](https://doi.org/10.57844/arcadia-77d4-1c5d). We are interested in developing approaches to predict the targets of tick secreted effector proteins, with the goal of learning new strategies for modulating itch, pain, and inflammation in the skin. In this work, we try out using AlphaFold Multimer to predict targets for 10 representatives of a family of tick TIL-domain protease inhibitors (orthogroup OG0000058). 
 
 This pilot had three main steps:
-1. **Protease inhibitor discovery**: Identify protease inhibitor gene families across 15 species of ticks
-2. **Phylogenomic profiling**: Identify which gene family is most predictive of the ability of ticks to suppress host-detection mechanisms such as itch, pain, and inflammation
-3. **Protein-protein interaction prediction**: Predict targets for protease inhibitor family orthogroup OG0000058
+1. **Protease inhibitor discovery**: Identify protease inhibitor gene families across 15 species of ticks using [ProteinCartography](https://github.com/Arcadia-Science/ProteinCartography) and orthogroup data from [previous work](https://dx.doi.org/10.57844/arcadia-4e3b-bbea)
+2. **Phylogenomic profiling**: Identify which gene family is most predictive of the ability of ticks to suppress host-detection mechanisms such as itch, pain, and inflammation using phylogenomic profiling 
+3. **Protein-protein interaction prediction**: Predict targets for protease inhibitor family orthogroup OG0000058 using AlphaFold Multimer
 
 ## Installation and Setup
 
 This repository uses conda to manage software environments and installations. You can find operating system-specific instructions for installing miniconda [here](https://docs.conda.io/projects/miniconda/en/latest/). After installing conda and [mamba](https://mamba.readthedocs.io/en/latest/), run the following commands to create the pipeline run environments.
 
-To create the enviroment used for protease inhibitor discovery (Notebooks 01-03):
+To create the enviroment used for protease inhibitor discovery:
 
 ```{bash}
 mamba env create -n pi-disco --file envs/pi-disco.yml
 conda activate pi-disco
 ```
-To create the enviroment used for protein-protein interaction prediction (Notebooks 05-08):
+To create the enviroment used for protein-protein interaction prediction:
 
 ```{bash}
 mamba env create -n tick_ppi --file envs/ppi.yml
 conda activate tick_ppi
 ```
 
-This repository contains R scripts. These can either be run directly in the terminal as R scripts or in the terminal R environment, or can be run in RStudio. If you choose to run these scripts in Rstudio, you can install it by following the instructions [here](https://posit.co/download/rstudio-desktop/). Once RStudio is installed, run the following from command line to open Rstudio from your activated conda environment:
+Our phylogenomic profiling work ([Notebook 04](https://github.com/Arcadia-Science/2025-pi-disco-pub/blob/main/notebooks/04_trait_mapping.Rmd)) uses R scripts and an R notebook. The R scripts can either be run directly in the terminal as R scripts or in the terminal R environment, or can be run in RStudio. If you choose to run these scripts in Rstudio, you can install it by following the instructions [here](https://posit.co/download/rstudio-desktop/). Once RStudio is installed, run the following from command line to open Rstudio from your activated conda environment:
 
 ```{bash}
 open -a Rstudio
 ```
 
-You can now move on to running the necessary scripts as described below. Make sure your working directory is set to this repo when in Rstudio. You can check your working directory with the getwd() command and change it with the ```setwd()``` command in R.
+To execute the code in [Notebook 04](https://github.com/Arcadia-Science/2025-pi-disco-pub/blob/main/notebooks/04_trait_mapping.Rmd), please make sure you have installed all the dependencies shown in the ```sessionInfo()``` at the beginning the [session](notebooks/04_trait_mapping.nb.html)
 
+## Data related to protease inhibitor discovery  
+- Datasheets used in Notebooks 01-03 are found in [datasheets](https://github.com/Arcadia-Science/2025-pi-disco-pub/tree/main/datasheets)
+- All chelicerate protein annotations are in [all_chelicerate_proteins.csv](https://zenodo.org/records/15186244) on Zenodo
+- Tick protein structures are in [pi-disco_esmfold_structures.zip](https://zenodo.org/records/15186244)
+- Animal toxin database downloaded from [UniProt Animal toxin annotation project](https://www.uniprot.org/help/Toxins) 
+- Our full ProteinCartography run is in [tick_PUFs_PIs_1200_plus_toxinDB_carto_run3.zip](https://zenodo.org/records/15186244) on Zenodo, key results are found in [outputs/carto_run](https://github.com/Arcadia-Science/2025-pi-disco-pub/tree/main/outputs/carto_run)
+- [NovelTree orthogroup data](https://github.com/Arcadia-Science/2025-pi-disco-pub/blob/main/datasheets/Orthogroups.tsv) comes from previous work [here](https://dx.doi.org/10.57844/arcadia-4e3b-bbea)
 
-## Data
+## Data related to phylogenomic profiling
+- Datasheets of [high-confidence](https://github.com/Arcadia-Science/2025-pi-disco-pub/blob/main/datasheets/PI_orthogroups_high_qual_06112023.tsv) and [low-confidence protease](https://github.com/Arcadia-Science/2025-pi-disco-pub/blob/main/datasheets/PI_orthogroups_low_qual_06112023.tsv) inhibitor gene families
+- NovelTree workflow output directory [chelicerata-v1-10062023](https://zenodo.org/records/14113178)
+- Results from phylogenomic profiling in [detection_suppression_outputs](https://github.com/Arcadia-Science/2025-pi-disco-pub/tree/main/outputs/detection_suppression_outputs/trait_prediction/detection_suppression_test_lasso/s_counts_proteases_combined)
 
-TODO: Add details about the description of input / output data and links to Zenodo depositions, if applicable.
+## Data related to Protein-protein interaction prediction
+- Datasheets of Uniprot accessions and expression metadata found in [datasheets](https://github.com/Arcadia-Science/2025-pi-disco-pub/tree/main/datasheets)
+- Results from D-script and AF-multimer runs are in [protein_protein_interaction_results](https://github.com/Arcadia-Science/2025-pi-disco-pub/tree/main/outputs/protein_protein_interaction_results)
+- Raw results files from AF-Multimer are on [Zenodo](https://zenodo.org/records/15186244) The .json and .pae files are the most important for reanalyzing the data to calculate AF-Multimer metrics
 
 ## Overview
 
@@ -93,13 +106,6 @@ Using either the [`make-afmultimer-fasta-from-tsv.py`](./scripts/make-afmultimer
 ## Data
 
 Input data are sets of tick and/or human serine proteases from Uniprot. Human proteins from Uniprot were pulled down for accessions listed in the `metadata` Uniprot table. Tick proteins were either selected from the [host detection suppression trait association analysis](https://github.com/Arcadia-Science/2024-chelicerate-phylogenomics) or from the analysis described above. These combinations of proteins were used for both sequence-based and structure-based predictions of PPIs. 
-
-### Description of the folder structure
-- `metadata/` Lists of Uniprot accessions and descriptions of annotations
-- `notebooks/` Analysis notebook code used in Google Colab to collate results from AF-multimer, and notebooks for comparing results from D-script and AF-multimer and analyzing and plotting protease inhibitor results
-- `scripts/` Command-line python scripts for generating AF-multimer FASTAs and automating D-script predictions, and analysis scripts
-- `figs/` Figures produced
-- `results/` Results, including files from D-script and AF-multimer
 
 The `results/` directory has results from D-SCRIPT and AF-Multimer runs. The final filtered results table with metrics from AF-Multimer, annotation data, and expression data is in [`serine_protease_results/2024-04-24-final-serine-protease-filtered-interface-comps-results.tsv`](./results/serine_protease_results/2024-04-24-final-serine-protease-filtered-interface-comps-results.tsv). The files here are used in the analysis notebooks and also described in the notebooks.
 
