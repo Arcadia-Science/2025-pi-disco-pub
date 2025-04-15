@@ -9,8 +9,8 @@ This repo accompanies the pub ["Case study: Using AlphaFold-Multimer to predict 
 
 This pilot had three main steps:
 1. **Protease inhibitor discovery**: Identify protease inhibitor gene families across 15 species of ticks using [ProteinCartography](https://github.com/Arcadia-Science/ProteinCartography) and orthogroup data from [previous work](https://dx.doi.org/10.57844/arcadia-4e3b-bbea)
-2. **Phylogenomic profiling**: Identify which gene family is most predictive of the ability of ticks to suppress host-detection mechanisms such as itch, pain, and inflammation using phylogenomic profiling 
-3. **Protein-protein interaction prediction**: Predict targets for protease inhibitor family orthogroup OG0000058 using AlphaFold Multimer
+2. **Phylogenomic profiling**: Identify which gene family is most predictive of the ability of ticks to suppress host-detection mechanisms such as itch, pain, and inflammation using trait mapping
+3. **Protein-protein interaction prediction**: Predict targets for protease inhibitor family orthogroup OG0000058 using AlphaFold Multimer. We also tried D-SCRIPT, but ultimately didn't move forward with that approach.
 
 ## Installation and Setup
 
@@ -38,17 +38,17 @@ open -a Rstudio
 To execute the code in [Notebook 04](./notebooks/04_trait_mapping.Rmd), please make sure you have installed all the dependencies shown in the ```sessionInfo()``` at the beginning the [session](./notebooks/04_trait_mapping.nb.html)
 
 ## Data related to protease inhibitor discovery  
-- Datasheets used in Notebooks 01-03 and 05 are found in [datasheets](./datasheets)
-- All chelicerate protein annotations are in [all_chelicerate_proteins.csv](https://zenodo.org/records/15186244) on Zenodo
-- Tick protein structures are in [pi-disco_esmfold_structures.zip](https://zenodo.org/records/15186244)
+- Datasheets used in Notebooks 01-03 and 05 are found in [`datasheets`](./datasheets)
+- All chelicerate protein annotations are in [`all_chelicerate_proteins.csv`](https://zenodo.org/records/15186244) on Zenodo
+- Tick protein structures are in [`pi-disco_esmfold_structures.zip`](https://zenodo.org/records/15186244)
 - Animal toxin database downloaded from [UniProt Animal toxin annotation project](https://www.uniprot.org/help/Toxins) 
-- Our full ProteinCartography run is in [tick_PUFs_PIs_1200_plus_toxinDB_carto_run3.zip](https://zenodo.org/records/15186244) on Zenodo, key results are found in [outputs/carto_run](./outputs/carto_run)
+- Our full ProteinCartography run is in [`tick_PUFs_PIs_1200_plus_toxinDB_carto_run3.zip`](https://zenodo.org/records/15186244) on Zenodo, key results are found in [`outputs/carto_run`](./outputs/carto_run)
 - [NovelTree orthogroup data](./datasheets/Orthogroups.tsv) comes from previous work [here](https://dx.doi.org/10.57844/arcadia-4e3b-bbea)
 
 ## Data related to phylogenomic profiling
 - Datasheets of [high-confidence](./datasheets/PI_orthogroups_high_qual_06112023.tsv) and [low-confidence protease](./datasheets/PI_orthogroups_low_qual_06112023.tsv) inhibitor gene families
-- NovelTree workflow output directory [chelicerata-v1-10062023](https://zenodo.org/records/14113178)
-- Results from phylogenomic profiling in [detection_suppression_outputs](./outputs/detection_suppression_outputs/trait_prediction/detection_suppression_test_lasso/s_counts_proteases_combined)
+- NovelTree workflow output directory [`chelicerata-v1-10062023`](https://zenodo.org/records/14113178)
+- Results from phylogenomic profiling in [`detection_suppression_outputs`](./outputs/detection_suppression_outputs/trait_prediction/detection_suppression_test_lasso/s_counts_proteases_combined)
 
 ## Data related to Protein-protein interaction prediction
 - Datasheets of Uniprot accessions and expression metadata found in [`datasheets`](./datasheets)
@@ -59,7 +59,7 @@ To execute the code in [Notebook 04](./notebooks/04_trait_mapping.Rmd), please m
 
 ### Description of the folder structure
 - [`datasheets/`](./datasheets) contains input metadata and datasheets used in analysis notebooks 
-- [` envs/`](./envs) contains two ```.yml``` files that specify the conda environments used for protease inhibitor discovery and protein-protein interaction prediction
+- [`envs/`](./envs) contains two ```.yml``` files that specify the conda environments used for protease inhibitor discovery and protein-protein interaction prediction
 - [`notebooks/`](./notebooks) contains the Jupyter notebooks used to do this analysis 
 - [`outputs/`](.outputs) contains [figures](./outputs/figures), [select results](./outputs/carto_run) from the ProteinCartography run, [results](./outputs/detection_suppression_outputs/trait_prediction/detection_suppression_test_lasso/s_counts_proteases_combined) from the phylogenomic profiling pipeline, and [results](./outputs/protein_protein_interaction_results) from protein-protein interaction prediction
 - [`scripts/`](.scripts) contains: scripts for folding proteins using an Arcadia-hosted ESMFold API, further details in [`scripts/README_esmfold_scripts.md`](./scripts/README_esmfold_scripts.md), scripts for protein-protein interaction prediction using D-SCRIPT and AlphaFold multimer, with further details in [`scripts/README_ppi_scripts.md`](./scripts/README_ppi_scripts.md), and an R script [`scripts/trait_mapping_functions.R`](./scripts/trait_mapping_functions.R) that accompanies [Notebook 04](./notebooks/04_trait_mapping.Rmd). 
@@ -68,14 +68,36 @@ To execute the code in [Notebook 04](./notebooks/04_trait_mapping.Rmd), please m
 ### Methods
 
 Protease inhibitor discovery:
-1. TO DO
+Get proteins: 01_get_proteins.ipynb
+First, define the set of tick proteins to functionally annotate using ProteinCartography. We begin by analyzing the sequence-based annotations of proteins of 15 different tick species from our [previous work], datasheet of chelicerate protein annotations found in [all_chelicerate_proteins.csv](https://zenodo.org/records/15186244). We select tick proteins annotated as protease inhibitors (PIs) from Kofamscan or Eggnog, as well as tick proteins of unknown function (PUFs) that were predicted to be secreted by deepsig. We also omit proteins >1200 aa, because large proteins can take an extremely long time to process. PIs that we have selected are in `./datasheets/tick_PIs_1200.csv` and secreted PUFs are in `./datasheets/tick_PUFs_1200.csv`
+
+Tick protein folding: 
+We use an Arcadia-hosted ESMFold API to predict to download the folded proteins. All the scripts we used are in `./scripts`, and detailed usage can be found in `scripts/README_esmfold_scripts.md`. The structures that we computed can be found in `pi-disco_esmfold_structures.zip`(https://zenodo.org/records/15186244)
+
+
+Download structures of Animal Toxins:
+
+
+Prepare metadata files for ProteinCartography:
+This notebook prepares the metadata file for tick proteins to go into ProteinCartography. It takes the set of target proteins defined in Notebook 01 and the tsv output from Scripts 03 (which is a list of successfully folded proteins) and creates a metadata file compatible with the ProteinCartography pipeline.This notebook double checks the metadata file for the toxin database. Both the toxin database structures and the metadata file came from a seperate Uniprot download, so I wanted to make sure that the metadata file was correct and matched the pdb files for the toxin database. This notebook does this check, and then it merges the toxin metadata file with the tick metadata file to be used in the combined cartography run.
+
+
+Run ProteinCartography"
+
+Analyze ProteinCartography results: 
+This notebook takes in the clustered output data from the ProteinCartography run on the tick proteins combined with the toxin database. By looking at semantic data (found in tick_PUFs_PIs_1200_plus_toxinDB_carto_run3.zip) and intra-cluster structural similarity, we find 7 clusters that are high quality protein inhibitors (2.5k proteins) and 4 clusters that are interesting but are much lower confidence (1.8 k proteins). We then combine these protease inhibitor sturctural clusters with NovelTree orthogroup data to select protease inhibitor orthogroups to put through trait mapping. The notebook selects 36 orthogroups that have either high quality or low quality protease inhibitor annotations for trait mapping. 
+
+
+
+Notebook 05 
+We use filtering by secretion signal and by expression level in the Amblyomma americanum female salivary gland. This resulted in 10 TIL domain proteins from Amblyomma americanum 
 
 Phylogenomic profiling:
 1. TO DO
 
 Protein-protein interaction prediction: 
-1. Activate environment `envs/ppi.yml`
-2. Collect sets of tick and human proteins. Human proteins and associated metadata are pulled down from Uniprot accessions with the [`fetch_accession.py`](https://github.com/Arcadia-Science/ProteinCartography/blob/v0.4.0-alpha/ProteinCartography/fetch_accession.py) and [`fetch_uniprot_metadata.py`](https://github.com/Arcadia-Science/ProteinCartography/blob/v0.4.0-alpha/ProteinCartography/fetch_uniprot_metadata.py) from [ProteinCartography](https://github.com/Arcadia-Science/ProteinCartography) following the instructions there and providing TXT files of Uniprot accessions. All tick protein sequences used in this study can be found in [2024-06-24-all-chelicerate-noveltree-proteins.fasta](https://zenodo.org/records/14113178).
+1. Activate environment [`envs/ppi.yml`](./envs/ppi.yml)
+2. Collect sets of tick and human proteins. Human proteins and associated metadata are pulled down from Uniprot accessions with the [`fetch_accession.py`](https://github.com/Arcadia-Science/ProteinCartography/blob/v0.4.0-alpha/ProteinCartography/fetch_accession.py) and [`fetch_uniprot_metadata.py`](https://github.com/Arcadia-Science/ProteinCartography/blob/v0.4.0-alpha/ProteinCartography/fetch_uniprot_metadata.py) from [ProteinCartography](https://github.com/Arcadia-Science/ProteinCartography) following the instructions there and providing TXT files of Uniprot accessions. All tick protein sequences used in this study can be found in [`2024-06-24-all-chelicerate-noveltree-proteins.fasta`](https://zenodo.org/records/14113178).
 3. Make sequence-based predictions of PPIs with D-script using the script [`make_dscript_PPI_predictions.py`](./scripts/make_dscript_PPI_predictions.py). Analysis of these results and attempted filtering are in [`scripts/dscript-results-analysis.R`](scripts/dscript-results-analysis.R).
 4. Prepare FASTA files for running with the Goolge Colab Batch AF-multimer notebook. This can be done either providing the separate bait and prey FASTA sequences that should be combined, or from a TSV of comparisons and a FASTA containing all the sequences
 5. Analyze Alphafold results with the Jupyter notebook code in [`notebooks/06_calculate_afmultimer_predictions.ipynb`](./notebooks/06_calculate_afmultimer_predictions.ipynb) and run with the [LazyAF Google Colab notebook](https://colab.research.google.com/drive/1j7WJLcUHTR8BrjkWDaU549rFk6X5Zu18), but paste in the modified code in this notebook. The modified code adds lines to calculate the average pLDDT and include in the resulting CSV files for each comparison. Change the text in each cell to point to your data and rename the output CSV file. If you don't need the pLDDT information just use the default notebook code.
