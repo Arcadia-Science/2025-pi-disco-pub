@@ -1,6 +1,6 @@
 ### ESMFold API scripts
 
-These are a couple utility scripts that submits folding jobs to the Arcadia Science hosted ESMFold API and to download the folded proteins. `enqueue.py` takes the FASTA file output (provided from S3), folds them using the Arcadia Science hosted ESMFold API. Example usage:
+These are a couple utility scripts that submit folding jobs to the Arcadia Science hosted ESMFold API and to download the folded proteins. `enqueue.py` takes the FASTA file output (provided from S3), folds them using the Arcadia Science hosted ESMFold API. Example usage:
 
 ```
 python scripts/enqueue.py --fasta-file s3://arcadia-pi-disco/tick_PUFs_PIs_1200.fasta --job-name "09/12 PI discovery" --output-directory s3://arcadia-pi-disco/pdb-files
