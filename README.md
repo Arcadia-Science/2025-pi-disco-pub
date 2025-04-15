@@ -58,6 +58,12 @@ To execute the code in [Notebook 04](https://github.com/Arcadia-Science/2025-pi-
 ## Overview
 
 ### Description of the folder structure
+- ```datasheets/``` contains input metadata and datasheets used in analysis notebooks 
+- ``` envs/``` contains two ```.yml``` files that specify the conda environments used for protease inhibitor discovery and protein-protein interaction prediction
+- ```notebooks/``` contains the Jupyter notebooks used to do this analysis 
+- ```outputs/``` contains figures, select results from the ProteinCartography run, results from the phylogenomic profiling pipeline, and results from protein-protein interaction prediction
+- ```scripts``` contains the following set of scripts: 
+  
 
 ### Methods
 
