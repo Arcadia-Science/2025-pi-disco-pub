@@ -108,4 +108,4 @@ Scripts and analysis run on MacOS except for AF-multimer runs which were through
 
 ## Contributing
 
-See how we recognize [feedback and contributions to our code](https://github.com/Arcadia-Science/arcadia-software-handbook/blob/main/guides-and-standards/guide-credit-for-contributions.md). 
+See how we recognize [feedback and contributions to our code](https://github.com/Arcadia-Science/arcadia-software-handbook/blob/main/guides-and-standards/guide--credit-for-contributions.md)
