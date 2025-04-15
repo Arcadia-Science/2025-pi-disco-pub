@@ -29,40 +29,40 @@ mamba env create -n tick_ppi --file envs/ppi.yml
 conda activate tick_ppi
 ```
 
-Our phylogenomic profiling work ([Notebook 04](https://github.com/Arcadia-Science/2025-pi-disco-pub/blob/main/notebooks/04_trait_mapping.Rmd)) uses R scripts and an R notebook. The R scripts can either be run directly in the terminal as R scripts or in the terminal R environment, or can be run in RStudio. If you choose to run these scripts in Rstudio, you can install it by following the instructions [here](https://posit.co/download/rstudio-desktop/). Once RStudio is installed, run the following from command line to open Rstudio from your activated conda environment:
+Our phylogenomic profiling work ([Notebook 04](./notebooks/04_trait_mapping.Rmd)) uses R scripts and an R notebook. The R scripts can either be run directly in the terminal as R scripts or in the terminal R environment, or can be run in RStudio. If you choose to run these scripts in Rstudio, you can install it by following the instructions [here](https://posit.co/download/rstudio-desktop/). Once RStudio is installed, run the following from command line to open Rstudio from your activated conda environment:
 
 ```{bash}
 open -a Rstudio
 ```
 
-To execute the code in [Notebook 04](https://github.com/Arcadia-Science/2025-pi-disco-pub/blob/main/notebooks/04_trait_mapping.Rmd), please make sure you have installed all the dependencies shown in the ```sessionInfo()``` at the beginning the [session](notebooks/04_trait_mapping.nb.html)
+To execute the code in [Notebook 04](./notebooks/04_trait_mapping.Rmd), please make sure you have installed all the dependencies shown in the ```sessionInfo()``` at the beginning the [session](./notebooks/04_trait_mapping.nb.html)
 
 ## Data related to protease inhibitor discovery  
-- Datasheets used in Notebooks 01-03 and 05 are found in [datasheets](https://github.com/Arcadia-Science/2025-pi-disco-pub/tree/main/datasheets)
+- Datasheets used in Notebooks 01-03 and 05 are found in [datasheets](./datasheets)
 - All chelicerate protein annotations are in [all_chelicerate_proteins.csv](https://zenodo.org/records/15186244) on Zenodo
 - Tick protein structures are in [pi-disco_esmfold_structures.zip](https://zenodo.org/records/15186244)
 - Animal toxin database downloaded from [UniProt Animal toxin annotation project](https://www.uniprot.org/help/Toxins) 
-- Our full ProteinCartography run is in [tick_PUFs_PIs_1200_plus_toxinDB_carto_run3.zip](https://zenodo.org/records/15186244) on Zenodo, key results are found in [outputs/carto_run](https://github.com/Arcadia-Science/2025-pi-disco-pub/tree/main/outputs/carto_run)
-- [NovelTree orthogroup data](https://github.com/Arcadia-Science/2025-pi-disco-pub/blob/main/datasheets/Orthogroups.tsv) comes from previous work [here](https://dx.doi.org/10.57844/arcadia-4e3b-bbea)
+- Our full ProteinCartography run is in [tick_PUFs_PIs_1200_plus_toxinDB_carto_run3.zip](https://zenodo.org/records/15186244) on Zenodo, key results are found in [outputs/carto_run](./outputs/carto_run)
+- [NovelTree orthogroup data](./datasheets/Orthogroups.tsv) comes from previous work [here](https://dx.doi.org/10.57844/arcadia-4e3b-bbea)
 
 ## Data related to phylogenomic profiling
-- Datasheets of [high-confidence](https://github.com/Arcadia-Science/2025-pi-disco-pub/blob/main/datasheets/PI_orthogroups_high_qual_06112023.tsv) and [low-confidence protease](https://github.com/Arcadia-Science/2025-pi-disco-pub/blob/main/datasheets/PI_orthogroups_low_qual_06112023.tsv) inhibitor gene families
+- Datasheets of [high-confidence](./datasheets/PI_orthogroups_high_qual_06112023.tsv) and [low-confidence protease](./datasheets/PI_orthogroups_low_qual_06112023.tsv) inhibitor gene families
 - NovelTree workflow output directory [chelicerata-v1-10062023](https://zenodo.org/records/14113178)
-- Results from phylogenomic profiling in [detection_suppression_outputs](https://github.com/Arcadia-Science/2025-pi-disco-pub/tree/main/outputs/detection_suppression_outputs/trait_prediction/detection_suppression_test_lasso/s_counts_proteases_combined)
+- Results from phylogenomic profiling in [detection_suppression_outputs](./outputs/detection_suppression_outputs/trait_prediction/detection_suppression_test_lasso/s_counts_proteases_combined)
 
 ## Data related to Protein-protein interaction prediction
-- Datasheets of Uniprot accessions and expression metadata found in [datasheets](https://github.com/Arcadia-Science/2025-pi-disco-pub/tree/main/datasheets)
-- Results from D-script and AF-multimer runs are in [protein_protein_interaction_results](https://github.com/Arcadia-Science/2025-pi-disco-pub/tree/main/outputs/protein_protein_interaction_results)
+- Datasheets of Uniprot accessions and expression metadata found in [`datasheets`](./datasheets)
+- Results from D-script and AF-multimer runs are in [`protein_protein_interaction_results`](./outputs/protein_protein_interaction_results)
 - Raw results files from AF-Multimer are on [Zenodo](https://zenodo.org/records/15186244) The .json and .pae files are the most important for reanalyzing the data to calculate AF-Multimer metrics
 
 ## Overview
 
 ### Description of the folder structure
-- `datasheets/` contains input metadata and datasheets used in analysis notebooks 
-- ` envs/` contains two ```.yml``` files that specify the conda environments used for protease inhibitor discovery and protein-protein interaction prediction
-- `notebooks/` contains the Jupyter notebooks used to do this analysis 
-- `outputs/` contains figures, select results from the ProteinCartography run, results from the phylogenomic profiling pipeline, and results from protein-protein interaction prediction
-- `scripts/` contains: scripts for folding proteins using an Arcadia-hosted ESMFold API, further details in `scripts/README_esmfold_scripts.md`, scripts for protein-protein interaction prediction using D-SCRIPT and AlphaFold multimer, with further details in `scripts/README_ppi_scripts.md`, and an R script `scripts/trait_mapping_functions.R` that accompanies [Notebook 04](https://github.com/Arcadia-Science/2025-pi-disco-pub/blob/main/notebooks/04_trait_mapping.Rmd). 
+- [`datasheets/`](./datasheets) contains input metadata and datasheets used in analysis notebooks 
+- [` envs/`](./envs) contains two ```.yml``` files that specify the conda environments used for protease inhibitor discovery and protein-protein interaction prediction
+- [`notebooks/`](./notebooks) contains the Jupyter notebooks used to do this analysis 
+- [`outputs/`](.outputs) contains [figures](./outputs/figures), [select results](./outputs/carto_run) from the ProteinCartography run, [results](./outputs/detection_suppression_outputs/trait_prediction/detection_suppression_test_lasso/s_counts_proteases_combined) from the phylogenomic profiling pipeline, and [results](./outputs/protein_protein_interaction_results) from protein-protein interaction prediction
+- [`scripts/`](.scripts) contains: scripts for folding proteins using an Arcadia-hosted ESMFold API, further details in [`scripts/README_esmfold_scripts.md`](./scripts/README_esmfold_scripts.md), scripts for protein-protein interaction prediction using D-SCRIPT and AlphaFold multimer, with further details in [`scripts/README_ppi_scripts.md`](./scripts/README_ppi_scripts.md), and an R script [`scripts/trait_mapping_functions.R`](./scripts/trait_mapping_functions.R) that accompanies [Notebook 04](./notebooks/04_trait_mapping.Rmd). 
   
 
 ### Methods
@@ -75,17 +75,18 @@ Phylogenomic profiling:
 
 Protein-protein interaction prediction: 
 1. Activate environment `envs/ppi.yml`
-2. Collect sets of tick and human proteins. Human proteins and associated metadata are pulled down from Uniprot accessions with the [`fetch_accession.py`](https://github.com/Arcadia-Science/ProteinCartography/blob/v0.4.0-alpha/ProteinCartography/fetch_accession.py) and [`fetch_uniprot_metadata.py`](https://github.com/Arcadia-Science/ProteinCartography/blob/v0.4.0-alpha/ProteinCartography/fetch_uniprot_metadata.py) from [ProteinCartography](https://github.com/Arcadia-Science/ProteinCartography) following the instructions there and providing TXT files of Uniprot accessions.
-3. Make sequence-based predictions of PPIs with D-script using the script `make_dscript_PPI_predictions.py`. Analysis of these results and attempted filtering are in `scripts/dscript-results-analysis.R`.
+2. Collect sets of tick and human proteins. Human proteins and associated metadata are pulled down from Uniprot accessions with the [`fetch_accession.py`](https://github.com/Arcadia-Science/ProteinCartography/blob/v0.4.0-alpha/ProteinCartography/fetch_accession.py) and [`fetch_uniprot_metadata.py`](https://github.com/Arcadia-Science/ProteinCartography/blob/v0.4.0-alpha/ProteinCartography/fetch_uniprot_metadata.py) from [ProteinCartography](https://github.com/Arcadia-Science/ProteinCartography) following the instructions there and providing TXT files of Uniprot accessions. All tick protein sequences used in this study can be found in [2024-06-24-all-chelicerate-noveltree-proteins.fasta](https://zenodo.org/records/14113178).
+3. Make sequence-based predictions of PPIs with D-script using the script [`make_dscript_PPI_predictions.py`](./scripts/make_dscript_PPI_predictions.py). Analysis of these results and attempted filtering are in [`scripts/dscript-results-analysis.R`](scripts/dscript-results-analysis.R).
 4. Prepare FASTA files for running with the Goolge Colab Batch AF-multimer notebook. This can be done either providing the separate bait and prey FASTA sequences that should be combined, or from a TSV of comparisons and a FASTA containing all the sequences
 5. Analyze Alphafold results with the Jupyter notebook code in [`notebooks/06_calculate_afmultimer_predictions.ipynb`](./notebooks/06_calculate_afmultimer_predictions.ipynb) and run with the [LazyAF Google Colab notebook](https://colab.research.google.com/drive/1j7WJLcUHTR8BrjkWDaU549rFk6X5Zu18), but paste in the modified code in this notebook. The modified code adds lines to calculate the average pLDDT and include in the resulting CSV files for each comparison. Change the text in each cell to point to your data and rename the output CSV file. If you don't need the pLDDT information just use the default notebook code.
 6. Save both the results and analysis folders from the AF-multimer predictions and the LazyAF analysis, which selects the highest ranking prediction JSON file and copies it into the analysis folder. Downloading the folder from Google Drive will automatically create a .zip archive and save this in your results folder for backup.
 7. Analyze AF-multimer results compared to D-script predictions with [`notebooks/07_analyze-dscript-afmultimer-comparisons.ipynb`](./notebooks/07_analyze-dscript-afmultimer-comparisons.ipynb)
 8. Code for analysis and plotting is in the [`notebooks/08_full-filtered-serine-protease-analysis.ipynb`](./notebooks/08_full-filtered-serine-protease-analysis.ipynb)
-9. We calculated additional AFmultimer metrics with the [`colabfold_analysis.py`](https://github.com/walterlab-HMS/AF2multimer-analysis/blob/main/colabfold_analysis.py) script as part of the AF2multimer-analysis toolkit that underlies the [predictomes.org](https://predictomes.org/) webserver. To use the script:
+9. We also calculate additional AFmultimer metrics with the [`colabfold_analysis.py`](https://github.com/walterlab-HMS/AF2multimer-analysis/blob/main/colabfold_analysis.py) script which is part of the AF2multimer-analysis toolkit that underlies the [predictomes.org](https://predictomes.org/) webserver. To use the script:
    1.  Download the raw AF2multimer results from Google drive and unzip them. Google will sometimes split up large downloads into multiple zip files and not all results files that go together are in the same subdirectories. Make sure for this script to work all the `.json` and `.pae` files together as well as a `.done.txt` file with the name of the comparison
    2.  Clone the directory with `git clone https://github.com/walterlab-HMS/AF2multimer-analysis`
    3.  Run the script with `python3 colabfold_analysis.py <AF2MULTIMER_RESULTS_DIRECTORY>`. This will create a new folder with the same name as your input directory with `_analysis` appended at the end. This creates three CSV files: a contacts, interfaces, and summary file. The `summary.csv` is the most useful for downstream steps and is how we calculated the pDockQ score for each interaction prediction. The contacts and interfaces files give more information for each residue the calculated metrics, whereas the summary file is an average across all residues.
+10. Obtain the predicted expression of each human serine protease hit from the [NCBI Gene Database](https://www.ncbi.nlm.nih.gov/gene). For each gene, we downloaded primary tissue expression data generated by [Fagerberg et al. 2014](https://pubmed.ncbi.nlm.nih.gov/24309898/), which analyzed gene expression in 27 different tissues from 95 healthy humans. Code for analysis and plotting is found in [`notebooks/08_full-filtered-serine-protease-analysis.ipynb`](./notebooks/08_full-filtered-serine-protease-analysis.ipynb)
 
 ### Compute Specifications
 
