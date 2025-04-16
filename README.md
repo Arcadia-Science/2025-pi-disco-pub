@@ -29,13 +29,13 @@ mamba env create -n tick_ppi --file envs/ppi.yml
 conda activate tick_ppi
 ```
 
-Our phylogenomic profiling work ([Notebook 04](./notebooks/04_trait_mapping.Rmd)) uses R scripts and an R notebook. The R scripts can either be run directly in the terminal as R scripts or in the terminal R environment, or can be run in RStudio. If you choose to run these scripts in Rstudio, you can install it by following the instructions [here](https://posit.co/download/rstudio-desktop/). Once RStudio is installed, run the following from command line to open Rstudio from your activated conda environment:
+Our phylogenomic profiling workflow is implemented in an R Markdown notebook ([Notebook 04](./notebooks/04_trait_mapping.Rmd)), which sources a ```trait_mapping_functions.R``` script located in the [`scripts`](./scripts) folder. To run this analysis, you can install Rstudio by following the instructions [here](https://posit.co/download/rstudio-desktop/). Once RStudio is installed, run the following from command line to open Rstudio from your activated conda environment:
 
 ```{bash}
 open -a Rstudio
 ```
 
-To execute the code in [Notebook 04](./notebooks/04_trait_mapping.Rmd), please make sure you have installed all the dependencies shown in the ```sessionInfo()``` at the beginning the [session](./notebooks/04_trait_mapping.nb.html)
+To execute the code in [Notebook 04](./notebooks/04_trait_mapping.Rmd), please make sure you have installed all the dependencies shown in the ```sessionInfo()``` printed at the beginning the [notebook](./notebooks/04_trait_mapping.nb.html).
 
 ## Data related to protease inhibitor discovery  
 - Datasheets used in Notebooks 01-03 and 05 are found in [`datasheets`](./datasheets)
