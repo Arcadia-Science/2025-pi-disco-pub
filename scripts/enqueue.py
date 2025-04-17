@@ -27,8 +27,8 @@ import sys
 
 """
 Usage:
-mamba env create --file env.yml
-mamba activate 2025-pi-disco-pub
+mamba env create -n pi-disco --file envs/pi-disco.yml
+conda activate pi-disco
 
 python scripts/enqueue.py --fasta-file s3://arcadia-pi-disco/tick_PUFs_PIs_1200.fasta --job-name "09/12 PI discovery" --output-directory s3://arcadia-pi-disco/pdb-files
 """
