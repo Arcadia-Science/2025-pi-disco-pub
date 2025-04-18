@@ -5,7 +5,7 @@
 
 ## Purpose
 
-This repo accompanies the pub ["Case study: Using AlphaFold-Multimer to predict the targets of tick protease inhibitors"](https://doi.org/10.57844/arcadia-77d4-1c5d). We are interested in developing approaches to predict the targets of tick secreted effector proteins, with the goal of learning new strategies for modulating itch, pain, and inflammation in the skin. In this work, we try out using AlphaFold Multimer to predict targets for 10 representatives of a family of tick TIL-domain protease inhibitors (orthogroup OG0000058). 
+This repo accompanies the pub ["How confident should we be in potential targets of tick protease inhibitors predicted by AlphaFold-Multimer?"](https://doi.org/10.57844/arcadia-77d4-1c5d). We are interested in developing approaches to predict the targets of tick secreted effector proteins, with the goal of learning new strategies for modulating itch, pain, and inflammation in the skin. In this work, we try out using AlphaFold Multimer to predict targets for 10 representatives of a family of tick TIL-domain protease inhibitors (orthogroup OG0000058). 
 
 This pilot had three main steps:
 1. **Protease inhibitor discovery**: Identify protease inhibitor gene families across 15 species of ticks using [ProteinCartography](https://github.com/Arcadia-Science/ProteinCartography) and orthogroup data from [previous work](https://dx.doi.org/10.57844/arcadia-4e3b-bbea)
